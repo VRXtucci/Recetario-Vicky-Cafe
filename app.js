@@ -104,7 +104,7 @@ function money(value) {
         "es-VE",
         {
             style: "currency",
-            currency: "USD",
+            currency: "VES",
             maximumFractionDigits: 2
         }
     ).format(
