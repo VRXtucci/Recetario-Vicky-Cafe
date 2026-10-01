@@ -842,18 +842,6 @@ window.RECETARIO = {
       name: "ENVASE BOCATA",
       unit: "UNIDAD",
     },
-    {
-      name: "CERVEZA",
-      unit: "L",
-    },
-    {
-      name: "LECHE",
-      unit: "L",
-    },
-    {
-      name: "AGUA",
-      unit: "L",
-    },
   ],
   recipes: [
     {
@@ -1028,7 +1016,7 @@ window.RECETARIO = {
         {
           ingredient: "SALSA SOYA",
           qty: 0.1,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "PIMENTON DULCE",
@@ -1182,7 +1170,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.03,
-          unit: "L",
+          unit: "KG",
         },
       ],
     },
@@ -1234,7 +1222,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.03,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "PEREJIL",
@@ -1244,7 +1232,7 @@ window.RECETARIO = {
         {
           ingredient: "VINAGRE",
           qty: 0.01,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "PIMIENTA",
@@ -1709,7 +1697,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.02,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "PAPA",
@@ -1920,7 +1908,7 @@ window.RECETARIO = {
         {
           ingredient: "VINO BLANCO",
           qty: 0.02,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "ALBAHACA BLANCA",
@@ -1956,12 +1944,12 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.03,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "VINO BLANCO",
           qty: 0.02,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "TOMILLO",
@@ -2002,7 +1990,7 @@ window.RECETARIO = {
         {
           ingredient: "VINO TINTO",
           qty: 0.03,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "7 ESPECIES",
@@ -2038,7 +2026,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.02,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "SOFRITO",
@@ -2079,7 +2067,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.02,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "TAMARINDO",
@@ -2509,7 +2497,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE SOYA",
           qty: 0.1,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "AJO",
@@ -2654,7 +2642,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.2,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "LIMON",
@@ -2711,7 +2699,7 @@ window.RECETARIO = {
         {
           ingredient: "VINAGRE",
           qty: 0.6,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "AZUCAR",
@@ -2833,7 +2821,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE DE OLIVA",
           qty: 0.04,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "SAL",
@@ -3065,7 +3053,7 @@ window.RECETARIO = {
         {
           ingredient: "VINO TINTO",
           qty: 0.1,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "AJO",
@@ -3285,7 +3273,7 @@ window.RECETARIO = {
         {
           ingredient: "VINO TINTO",
           qty: 0.15,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "AGUA",
@@ -3352,12 +3340,12 @@ window.RECETARIO = {
         {
           ingredient: "VINAGRE",
           qty: 0.04,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "SALSA SOYA",
           qty: 0.04,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "AJO DIENTE",
@@ -3408,7 +3396,7 @@ window.RECETARIO = {
         {
           ingredient: "SALSA SOYA",
           qty: 0.015,
-          unit: "L",
+          unit: "KG",
         },
       ],
     },
@@ -3475,7 +3463,7 @@ window.RECETARIO = {
         {
           ingredient: "VINAGRE",
           qty: 0.01,
-          unit: "L",
+          unit: "KG",
         },
       ],
     },
@@ -3491,7 +3479,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE VEGETAL",
           qty: 0.12,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "SAL",
@@ -3527,7 +3515,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.1,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "SAL",
@@ -3553,7 +3541,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.08,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "SAL",
@@ -3579,7 +3567,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.08,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "SAL",
@@ -3605,7 +3593,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.08,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "SAL",
@@ -3631,7 +3619,7 @@ window.RECETARIO = {
         {
           ingredient: "ACEITE",
           qty: 0.08,
-          unit: "L",
+          unit: "KG",
         },
         {
           ingredient: "SAL",
