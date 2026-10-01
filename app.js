@@ -82,39 +82,6 @@ function esc(value) {
 
 
 /* =====================================================
-   MONEDA
-===================================================== */
-
-function money(value) {
-
-    if (
-        value === null ||
-        value === undefined ||
-        Number.isNaN(
-            Number(value)
-        )
-    ) {
-
-        return "—";
-
-    }
-
-
-    return new Intl.NumberFormat(
-        "es-VE",
-        {
-            style: "currency",
-            currency: "VES",
-            maximumFractionDigits: 2
-        }
-    ).format(
-        Number(value)
-    );
-
-}
-
-
-/* =====================================================
    UNIDADES
 ===================================================== */
 
@@ -230,51 +197,6 @@ function convertQuantityToGrams(
 
 
 /* =====================================================
-   CONVERSIÓN PRECIO KG → PRECIO GRAMO
-===================================================== */
-
-function convertPriceToGram(
-    price,
-    unit
-) {
-
-    const number =
-        Number(price) || 0;
-
-
-    const normalized =
-        normalizeUnit(unit);
-
-
-    /*
-       Si el precio estaba expresado
-       por kilogramo, ahora necesitamos
-       saber cuánto cuesta UN GRAMO.
-
-       Ejemplo:
-
-       $8 por kg
-
-       $8 / 1000
-
-       = $0.008 por gramo
-    */
-
-    if (
-        normalized === "kg"
-    ) {
-
-        return number / 1000;
-
-    }
-
-
-    return number;
-
-}
-
-
-/* =====================================================
    NORMALIZAR INGREDIENTE
 ===================================================== */
 
@@ -293,13 +215,8 @@ function normalizeIngredient(
 
 
     /*
-       Si era KG:
-
-       cantidad:
-       kg → g
-
-       precio:
-       $/kg → $/g
+       Si era KG, convertimos a gramos.
+       ml, l y unidades se mantienen.
     */
 
     if (
@@ -312,69 +229,20 @@ function normalizeIngredient(
                 originalUnit
             );
 
-
-        item.unitPrice =
-            convertPriceToGram(
-                item.unitPrice,
-                originalUnit
-            );
-
-
         item.unit =
             "g";
 
-
-        item.total =
-            Number(item.qty || 0) *
-            Number(item.unitPrice || 0);
-
     }
-
-
-    /*
-       Si ya era gramos,
-       simplemente lo dejamos
-       en gramos.
-    */
-
-    else if (
-        originalUnit === "g"
-    ) {
-
-        item.unit =
-            "g";
-
-        item.qty =
-            Number(item.qty) || 0;
-
-        item.unitPrice =
-            Number(item.unitPrice) || 0;
-
-        item.total =
-            Number(item.qty) *
-            Number(item.unitPrice);
-
-    }
-
-
-    /*
-       ml, l y unidades
-       se mantienen.
-    */
-
     else {
 
         item.qty =
             Number(item.qty) || 0;
 
-        item.unitPrice =
-            Number(item.unitPrice) || 0;
-
-        item.total =
-            Number(item.qty) *
-            Number(item.unitPrice);
-
     }
+
+
+    delete item.unitPrice;
+    delete item.total;
 
 
     return item;
@@ -403,10 +271,7 @@ function normalizeRecipe(
         );
 
 
-    result.total =
-        calculateTotal(
-            result.ingredients
-        );
+    delete result.total;
 
 
     return result;
@@ -550,39 +415,6 @@ D.subrecipes =
 
 
 /* =====================================================
-   COSTO TOTAL
-===================================================== */
-
-function calculateTotal(
-    ingredients
-) {
-
-    return ingredients.reduce(
-        (
-            total,
-            ingredient
-        ) => {
-
-            return total +
-                (
-                    Number(
-                        ingredient.qty
-                    ) || 0
-                ) *
-                (
-                    Number(
-                        ingredient.unitPrice
-                    ) || 0
-                );
-
-        },
-        0
-    );
-
-}
-
-
-/* =====================================================
    GUARDAR
 ===================================================== */
 
@@ -695,67 +527,6 @@ function findIngredient(
 
 
 /* =====================================================
-   PRECIO DEL CATÁLOGO
-===================================================== */
-
-function catalogPrice(
-    name
-) {
-
-    const ingredient =
-        findIngredient(
-            name
-        );
-
-
-    if (!ingredient) {
-
-        return 0;
-
-    }
-
-
-    const unit =
-        normalizeUnit(
-            ingredient.unit
-        );
-
-
-    /*
-       Si el catálogo dice:
-
-       kg
-
-       y el precio es:
-
-       $10/kg
-
-       convertimos a:
-
-       $0.01/g
-    */
-
-    if (
-        unit === "kg"
-    ) {
-
-        return (
-            Number(
-                ingredient.price
-            ) || 0
-        ) / 1000;
-
-    }
-
-
-    return Number(
-        ingredient.price
-    ) || 0;
-
-}
-
-
-/* =====================================================
    UNIDAD DEL CATÁLOGO
 ===================================================== */
 
@@ -853,14 +624,6 @@ function card(
                         `
                         : ""
                 }
-
-            </div>
-
-
-            <div class="cost">
-
-                Costo:
-                ${money(item.total)}
 
             </div>
 
@@ -1137,10 +900,6 @@ function listing(type) {
                                 Unidad
                             </th>
 
-                            <th>
-                                Precio
-                            </th>
-
                         </tr>
 
                     </thead>
@@ -1159,12 +918,6 @@ function listing(type) {
                                             );
 
 
-                                        let price =
-                                            Number(
-                                                item.price
-                                            ) || 0;
-
-
                                         /*
                                            Mostrar los
                                            insumos en gramos.
@@ -1175,9 +928,6 @@ function listing(type) {
                                         ) {
 
                                             unit = "g";
-
-                                            price =
-                                                price / 1000;
 
                                         }
 
@@ -1203,23 +953,6 @@ function listing(type) {
 
                                                     ${
                                                         unit
-                                                    }
-
-                                                </td>
-
-
-                                                <td>
-
-                                                    ${
-                                                        money(
-                                                            price
-                                                        )
-                                                    }
-
-                                                    ${
-                                                        unit === "g"
-                                                            ? " / g"
-                                                            : ""
                                                     }
 
                                                 </td>
@@ -1502,15 +1235,9 @@ function openItem(
                         ${esc(
                             item.portions
                         )}
-                        ·
                     `
                     : ""
             }
-
-            Costo:
-            <b>
-                ${money(item.total)}
-            </b>
 
         </div>
 
@@ -1547,17 +1274,6 @@ function openItem(
                                             ingredient.unit
                                         )
                                     }
-
-                                </div>
-
-
-                                <div
-                                    class="price"
-                                >
-
-                                    ${money(
-                                        ingredient.total
-                                    )}
 
                                 </div>
 
@@ -1810,8 +1526,6 @@ function openEditor(
 
                 portions: "",
 
-                total: 0,
-
                 ingredients: []
 
             };
@@ -1904,19 +1618,6 @@ function openEditor(
             ></div>
 
 
-            <div class="editor-total">
-
-                Costo calculado:
-
-                <strong
-                    id="editor-total"
-                >
-                    $0.00
-                </strong>
-
-            </div>
-
-
             <div class="form-actions">
 
                 <button
@@ -1962,9 +1663,7 @@ function openEditor(
                 {
                     ingredient: "",
                     qty: "",
-                    unit: "g",
-                    unitPrice: 0,
-                    total: 0
+                    unit: "g"
                 }
             ];
 
@@ -1990,16 +1689,11 @@ function openEditor(
                     {
                         ingredient: "",
                         qty: "",
-                        unit: "g",
-                        unitPrice: 0,
-                        total: 0
+                        unit: "g"
                     }
                 );
 
             };
-
-
-    updateEditorTotal();
 
 
     document
@@ -2083,27 +1777,6 @@ function addIngredientRow(
     }
 
 
-    let price =
-        Number(
-            item.unitPrice
-        ) || 0;
-
-
-    /*
-       Precio por gramo.
-    */
-
-    if (
-        normalizeUnit(
-            item.unit
-        ) === "kg"
-    ) {
-
-        price /= 1000;
-
-    }
-
-
     row.innerHTML = `
 
         <input
@@ -2139,18 +1812,6 @@ function addIngredientRow(
         >
 
 
-        <input
-            class="i-price"
-            type="number"
-            min="0"
-            step="0.000001"
-            placeholder="Precio"
-            value="${
-                price
-            }"
-        >
-
-
         <button
             type="button"
             class="icon-btn remove-row"
@@ -2179,12 +1840,6 @@ function addIngredientRow(
         );
 
 
-    const priceInput =
-        row.querySelector(
-            ".i-price"
-        );
-
-
     nameInput.onchange =
         () => {
 
@@ -2199,114 +1854,7 @@ function addIngredientRow(
 
             }
 
-
-            if (
-                !Number(
-                    priceInput.value
-                )
-            ) {
-
-                priceInput.value =
-                    catalogPrice(
-                        nameInput.value
-                    );
-
-            }
-
-
-            updateEditorTotal();
-
         };
-
-
-    row
-        .querySelectorAll(
-            "input"
-        )
-        .forEach(
-            input =>
-                input.oninput =
-                    updateEditorTotal
-        );
-
-
-    row
-        .querySelector(
-            ".remove-row"
-        )
-        .onclick =
-            () => {
-
-                row.remove();
-
-                updateEditorTotal();
-
-            };
-
-}
-
-
-/* =====================================================
-   COSTO DEL EDITOR
-===================================================== */
-
-function updateEditorTotal() {
-
-    const rows =
-        [
-            ...document
-                .querySelectorAll(
-                    ".ingredient-editor-row"
-                )
-        ];
-
-
-    let total = 0;
-
-
-    rows.forEach(
-        row => {
-
-            const quantity =
-                Number(
-                    row
-                        .querySelector(
-                            ".i-qty"
-                        )
-                        .value
-                ) || 0;
-
-
-            const price =
-                Number(
-                    row
-                        .querySelector(
-                            ".i-price"
-                        )
-                        .value
-                ) || 0;
-
-
-            total +=
-                quantity *
-                price;
-
-        }
-    );
-
-
-    const output =
-        document.getElementById(
-            "editor-total"
-        );
-
-
-    if (output) {
-
-        output.textContent =
-            money(total);
-
-    }
 
 }
 
@@ -2392,16 +1940,6 @@ function saveEditor() {
                     );
 
 
-                let unitPrice =
-                    Number(
-                        row
-                            .querySelector(
-                                ".i-price"
-                            )
-                            .value
-                    ) || 0;
-
-
                 /*
                    Si alguien escribe kg
                    manualmente, también
@@ -2414,16 +1952,9 @@ function saveEditor() {
 
                     qty *= 1000;
 
-                    unitPrice /= 1000;
-
                     unit = "g";
 
                 }
-
-
-                const total =
-                    qty *
-                    unitPrice;
 
 
                 return {
@@ -2432,11 +1963,7 @@ function saveEditor() {
 
                     qty,
 
-                    unit,
-
-                    unitPrice,
-
-                    total
+                    unit
 
                 };
 
@@ -2459,11 +1986,6 @@ function saveEditor() {
                 )
                 .value
                 .trim(),
-
-        total:
-            calculateTotal(
-                ingredients
-            ),
 
         ingredients,
 
@@ -3158,38 +2680,15 @@ function calculateScale(
                     );
 
 
-                const scaledTotal =
-                    scaled *
-                    (
-                        Number(
-                            ingredient.unitPrice
-                        ) || 0
-                    );
-
-
                 return {
 
                     ...ingredient,
 
-                    scaled,
-
-                    scaledTotal
+                    scaled
 
                 };
 
             }
-        );
-
-
-    const total =
-        rows.reduce(
-            (
-                sum,
-                ingredient
-            ) =>
-                sum +
-                ingredient.scaledTotal,
-            0
         );
 
 
@@ -3202,14 +2701,6 @@ function calculateScale(
             </b>
 
             ${factor.toFixed(6)}
-
-            <br><br>
-
-            <b>
-                Costo estimado:
-            </b>
-
-            ${money(total)}
 
         </div>
 
@@ -3246,17 +2737,6 @@ function calculateScale(
                                             ingredient.unit
                                         )
                                     }
-
-                                </div>
-
-
-                                <div
-                                    class="price"
-                                >
-
-                                    ${money(
-                                        ingredient.scaledTotal
-                                    )}
 
                                 </div>
 
