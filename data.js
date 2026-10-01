@@ -4,1053 +4,843 @@ window.RECETARIO = {
   "ingredients": [
     {
       "name": "HARINA PANADERA",
-      "unit": "KG",
-      "price": 1232
-    },
+      "unit": "KG"
+       },
     {
       "name": "SAL",
-      "unit": "KG",
-      "price": 1320
-    },
+      "unit": "KG"
+       },
     {
       "name": "ACEITE",
-      "unit": "L",
-      "price": 2640
-    },
+      "unit": "L"
+       },
     {
       "name": "RAMAS",
-      "unit": "KG",
-      "price": 2640
-    },
+      "unit": "KG"
+       },
     {
       "name": "ARROZ",
-      "unit": "KG",
-      "price": 1760
-    },
+      "unit": "KG"
+       },
     {
       "name": "CARNE MOLIDA",
-      "unit": "KG",
-      "price": 8624
-    },
+      "unit": "KG"
+       },
     {
       "name": "SALSA SOYA",
-      "unit": "L",
-      "price": 10736
-    },
+      "unit": "L"
+        },
     {
       "name": "AJO EN POLVO",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "AZUCAR",
-      "unit": "KG",
-      "price": 1584
-    },
+      "unit": "KG"
+       },
     {
       "name": "TOMATE",
-      "unit": "KG",
-      "price": 2376
-    },
+      "unit": "KG"
+       },
     {
       "name": "OREGANO",
-      "unit": "KG",
-      "price": 14080
-    },
+      "unit": "KG"
+        },
     {
       "name": "CANELA EN POLVO",
-      "unit": "KG",
-      "price": 22880
-    },
+      "unit": "KG"
+        },
     {
       "name": "RICOTTA",
-      "unit": "KG",
-      "price": 3080
-    },
+      "unit": "KG"
+       },
     {
       "name": "COCA COLA",
-      "unit": "L",
-      "price": 1408
-    },
+      "unit": "L"
+       },
     {
       "name": "VINAGRE",
-      "unit": "L",
-      "price": 2640
-    },
+      "unit": "L"
+       },
     {
       "name": "SALSA DE TOMATE",
-      "unit": "KG",
-      "price": 5720
-    },
+      "unit": "KG"
+       },
     {
       "name": "FECULA DE MAIZ",
-      "unit": "KG",
-      "price": 2640
-    },
+      "unit": "KG"
+       },
     {
       "name": "MOSTAZA",
-      "unit": "KG",
-      "price": 5280
-    },
+      "unit": "KG"
+       },
     {
       "name": "PECHUGA DE POLLO",
-      "unit": "KG",
-      "price": 7040
-    },
+      "unit": "KG"
+       },
     {
       "name": "JAMON AREPERO",
-      "unit": "KG",
-      "price": 5720
-    },
+      "unit": "KG"
+       },
     {
       "name": "QUESO AMARILLO",
-      "unit": "KG",
-      "price": 10560
-    },
+      "unit": "KG"
+        },
     {
       "name": "HUEVO",
-      "unit": "UNIDAD",
-      "price": 264
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "MUCHACHO CUADRADO",
-      "unit": "KG",
-      "price": 8800
-    },
+      "unit": "KG"
+       },
     {
       "name": "ADOBO",
-      "unit": "KG",
-      "price": 23760
-    },
+      "unit": "KG"
+        },
     {
       "name": "PAPELON",
-      "unit": "UNIDAD",
-      "price": 1320
-    },
+      "unit": "UNIDAD"
+       },
     {
       "name": "CERDO",
-      "unit": "KG",
-      "price": 7040
-    },
+      "unit": "KG"
+       },
     {
       "name": "PAN RALLADO",
-      "unit": "KG",
-      "price": 2200
-    },
+      "unit": "KG"
+       },
     {
       "name": "CHAMPIÑONES",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "QUESO CREMA",
-      "unit": "KG",
-      "price": 10560
-    },
+      "unit": "KG"
+        },
     {
       "name": "PASAS",
-      "unit": "KG",
-      "price": 7040
-    },
+      "unit": "KG"
+       },
     {
       "name": "ACEITUNAS",
-      "unit": "KG",
-      "price": 7040
-    },
+      "unit": "KG"
+       },
     {
       "name": "HARINA LEUDANTE",
-      "unit": "KG",
-      "price": 1760
-    },
+      "unit": "KG"
+       },
     {
       "name": "MANTEQUILLA",
-      "unit": "KG",
-      "price": 5280
-    },
+      "unit": "KG"
+       },
     {
       "name": "CACAO EN POLVO",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "LECHE CONDENSADA",
-      "unit": "LITRO",
-      "price": 6600
-    },
+      "unit": "LITRO"
+       },
     {
       "name": "FLAN",
-      "unit": "KG",
-      "price": 5720
-    },
+      "unit": "KG"
+       },
     {
       "name": "RON",
-      "unit": "LITRO",
-      "price": 3960
-    },
+      "unit": "LITRO"
+       },
     {
       "name": "COCOSETTE",
-      "unit": "UNIDAD",
-      "price": 1056
-    },
+      "unit": "UNIDAD"
+       },
     {
       "name": "LEVADURA",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "LECHE EN POLVO",
-      "unit": "KG",
-      "price": 9680
-    },
+      "unit": "KG"
+       },
     {
       "name": "VAINILLA",
-      "unit": "L",
-      "price": 5280
-    },
+      "unit": "L"
+       },
     {
       "name": "MAIZ DULCE",
-      "unit": "KG",
-      "price": 1760
-    },
+      "unit": "KG"
+       },
     {
       "name": "CAMARON",
-      "unit": "KG",
-      "price": 15840
-    },
+      "unit": "KG"
+        },
     {
       "name": "CHORIZO",
       "unit": "KG",
-      "price": 7040
-    },
+       },
     {
       "name": "POLVO DE HORNEAR",
-      "unit": "KG",
-      "price": 4400
-    },
+      "unit": "KG"
+       },
     {
       "name": "COCO RALLADO",
-      "unit": "KG",
-      "price": 7040
-    },
+      "unit": "KG"
+       },
     {
       "name": "AREQUIPE",
-      "unit": "KG",
-      "price": 4840
-    },
+      "unit": "KG"
+       },
     {
       "name": "GALLETA MARIA",
-      "unit": "PAQUETE",
-      "price": 1760
-    },
+      "unit": "PAQUETE"
+       },
     {
       "name": "CUCHARITAS TORTA",
-      "unit": "UNIDAD",
-      "price": 44
+      "unit": "UNIDAD"
     },
     {
       "name": "GELATINA SIN SABOR",
-      "unit": "KG",
-      "price": 18480
-    },
+      "unit": "KG"
+        },
     {
       "name": "CHANTILLY",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "QUESO MADURADO",
-      "unit": "KG",
-      "price": 10560
-    },
+      "unit": "KG"
+        },
     {
       "name": "PAN DE HAMBURGUESA",
-      "unit": "UNIDAD",
-      "price": 1320
-    },
+      "unit": "UNIDAD"
+       },
     {
       "name": "PAPA",
-      "unit": "KG",
-      "price": 2200
-    },
+      "unit": "KG"
+       },
     {
       "name": "PALOS DE ALTURA",
-      "unit": "UNIDAD",
-      "price": 26.4
-    },
+      "unit": "UNIDAD"
+       },
     {
       "name": "PAN DE PERRO C",
-      "unit": "UNIDAD",
-      "price": 52.8
-    },
+      "unit": "UNIDAD"
+       },
     {
       "name": "SALCHICHAS",
-      "unit": "UNIDAD",
-      "price": 528
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "CARNE MECHADA",
-      "unit": "KG",
-      "price": 8624
-    },
+      "unit": "KG"
+       },
     {
       "name": "CREMA DE LECHE",
-      "unit": "KG",
-      "price": 9680
-    },
+      "unit": "KG"
+       },
     {
       "name": "LLUVIA DE COLORES",
-      "unit": "KG",
-      "price": 5280
-    },
+      "unit": "KG"
+       },
     {
       "name": "FRUTA",
-      "unit": "KG",
-      "price": 1760
-    },
+      "unit": "KG"
+       },
     {
       "name": "GALLETAS DE SODA",
-      "unit": "UNIDAD",
-      "price": 1760
-    },
+      "unit": "UNIDAD"
+       },
     {
       "name": "QUESO  SEMI DURO",
-      "unit": "KG",
-      "price": 6600
-    },
+      "unit": "KG"
+       },
     {
       "name": "CHOCOLATE",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "SEPARADOR",
-      "unit": "UNIDAD",
-      "price": 70.4
-    },
+      "unit": "UNIDAD"
+       },
     {
       "name": "TOCINETA",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "QUESO MOZZARELLA",
-      "unit": "KG",
-      "price": 9020
-    },
+      "unit": "KG"
+       },
     {
       "name": "VEGETALES",
-      "unit": "KG",
-      "price": 2200
-    },
+      "unit": "KG"
+       },
     {
       "name": "ALBAHACA",
-      "unit": "KG",
-      "price": 5280
-    },
+      "unit": "KG"
+       },
     {
       "name": "GALLETA OREO",
-      "unit": "UNIDAD",
-      "price": 88
+      "unit": "UNIDAD"
     },
     {
       "name": "HARINA PAN",
-      "unit": "KG",
-      "price": 1320
-    },
+      "unit": "KG"
+       },
     {
       "name": "ALAS DE POLLO",
-      "unit": "KG",
-      "price": 3080
-    },
+      "unit": "KG"
+       },
     {
       "name": "MEZCLA DE CACHAPA",
-      "unit": "KG",
-      "price": 5280
-    },
+      "unit": "KG"
+       },
     {
       "name": "BOCADILLO",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "PAN CANILLA",
-      "unit": "UNIDAD",
-      "price": 352
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "PAPA",
-      "unit": "KG",
-      "price": 1760
-    },
+      "unit": "KG"
+       },
     {
       "name": "REPOLLO MORADO",
-      "unit": "KG",
-      "price": 1760
-    },
+      "unit": "KG"
+       },
     {
       "name": "ZANAHORIA",
-      "unit": "KG",
-      "price": 880
-    },
+      "unit": "KG"
+      },
     {
       "name": "PASTA LARGA",
-      "unit": "KG",
-      "price": 1496
-    },
+      "unit": "KG"
+       },
     {
       "name": "NATA",
-      "unit": "KG",
-      "price": null
-    },
+      "unit": "KG"
+       },
     {
       "name": "PAPAS FRITAS",
-      "unit": "KG",
-      "price": 1320
-    },
+      "unit": "KG"
+       },
     {
       "name": "PAN DE PERRO C GDE",
-      "unit": "KG",
-      "price": 158.4
-    },
+      "unit": "KG"
+        },
     {
       "name": "PAN FRANCES",
-      "unit": "UNIDAD",
-      "price": 132
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "AGUACATE",
-      "unit": "KG",
-      "price": 2640
-    },
+      "unit": "KG"
+       },
     {
       "name": "MORTADELA",
-      "unit": "KG",
-      "price": 3960
-    },
+      "unit": "KG"
+       },
     {
       "name": "QUESO FUNDIDO",
-      "unit": "KG",
-      "price": 10560
-    },
+      "unit": "KG"
+        },
     {
       "name": "COLORANTE VEGETAL",
-      "unit": "FRASCO",
-      "price": 2640
-    },
+      "unit": "FRASCO"
+       },
     {
       "name": "PULPO",
       "unit": "KG",
-      "price": 22000
-    },
+        },
     {
       "name": "CAJA DIA DE LAS MADRES",
-      "unit": "UNIDAD",
-      "price": 528
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "LOMITO",
-      "unit": "KG",
-      "price": 14080
-    },
+      "unit": "KG"
+        },
     {
       "name": "MAYONESA DE BOLSA",
-      "unit": "KG",
-      "price": 7040
-    },
+      "unit": "KG"
+       },
     {
       "name": "PAN DE HAMBURGUESA BUNS 90G",
-      "unit": "UNIDAD",
-      "price": 396
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "PAPAS FRANCESAS CONGELADAS",
-      "unit": "KG",
-      "price": 3080
-    },
+      "unit": "KG"
+       },
     {
       "name": "SALCHICHÓN",
-      "unit": "KG",
-      "price": 22000
-    },
+      "unit": "KG"
+        },
     {
       "name": "ACEITUNAS NEGRAS",
-      "unit": "KG",
-      "price": 9680
-    },
+      "unit": "KG"
+       },
     {
       "name": "MANI",
-      "unit": "KG",
-      "price": 6600
-    },
+      "unit": "KG"
+       },
     {
       "name": "FRESA",
-      "unit": "KG",
-      "price": 2640
-    },
+      "unit": "KG"
+       },
     {
       "name": "ALCAPARRA",
-      "unit": "KG",
-      "price": 6160
-    },
+      "unit": "KG"
+       },
     {
       "name": "COCO",
-      "unit": "KG",
-      "price": 1584
-    },
+      "unit": "KG"
+       },
     {
       "name": "CURCUMA",
-      "unit": "KG",
-      "price": 11440
-    },
+      "unit": "KG"
+        },
     {
       "name": "PIMIENTA DULCE",
-      "unit": "KG",
-      "price": 22880
-    },
+      "unit": "KG"
+        },
     {
       "name": "SANI",
-      "unit": "KG",
-      "price": 9680
-    },
+      "unit": "KG"
+       },
     {
       "name": "ENELDO",
-      "unit": "KG",
-      "price": 10560
-    },
+      "unit": "KG"
+        },
     {
       "name": "TOMILLO",
-      "unit": "KG",
-      "price": 14960
-    },
+      "unit": "KG"
+        },
     {
       "name": "CEBOLLA MOLIDA",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "PIMENTON DULCE",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "7 ESPECIAS",
-      "unit": "KG",
-      "price": 36080
-    },
+      "unit": "KG"
+        },
     {
       "name": "LAUREL MOLIDO",
-      "unit": "KG",
-      "price": 11440
-    },
+      "unit": "KG"
+        },
     {
       "name": "CARMENCITA",
-      "unit": "KG",
-      "price": 6160
-    },
+      "unit": "KG"
+       },
     {
       "name": "ONOTO",
-      "unit": "KG",
-      "price": 4400
-    },
+      "unit": "KG"
+       },
     {
       "name": "PIMIENTA NEGRA",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "AVENA",
-      "unit": "KG",
-      "price": 3784
-    },
+      "unit": "KG"
+       },
     {
       "name": "FRUTAS CONFITADAS",
-      "unit": "KG",
-      "price": 6160
-    },
+      "unit": "KG"
+       },
     {
       "name": "LECHUGA",
-      "unit": "KG",
-      "price": 2200
-    },
+      "unit": "KG"
+       },
     {
       "name": "QUESO DE AÑO",
-      "unit": "KG",
-      "price": 7480
-    },
+      "unit": "KG"
+       },
     {
       "name": "NUTELLA",
-      "unit": "KG",
-      "price": 11880
-    },
+      "unit": "KG"
+        },
     {
       "name": "MUSLO",
-      "unit": "KG",
-      "price": 3960
-    },
+      "unit": "KG"
+       },
     {
       "name": "CAZON",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "VASOS COCTELES 14OZ",
-      "unit": "UNIDAD",
-      "price": 88
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "PITILLOS",
-      "unit": "UNIDAD",
-      "price": 44
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "RON DE COCO",
-      "unit": "L",
-      "price": 4400
-    },
+      "unit": "L"
+       },
     {
       "name": "TEQUILA",
-      "unit": "L",
-      "price": 4840
-    },
+      "unit": "L"
+       },
     {
       "name": "RON BLANCO",
-      "unit": "L",
-      "price": 4400
-    },
+      "unit": "L"
+       },
     {
       "name": "HIELO",
-      "unit": "KG",
-      "price": 1408
-    },
+      "unit": "KG"
+       },
     {
       "name": "AJONJOLI",
-      "unit": "KG",
-      "price": 4400
-    },
+      "unit": "KG"
+       },
     {
       "name": "NEVAZUCAR",
-      "unit": "KG",
-      "price": 3080
-    },
+      "unit": "KG"
+       },
     {
       "name": "ALFALFA",
-      "unit": "KG",
-      "price": 23760
+      "unit": "KG"
     },
     {
       "name": "SALCHICHON",
-      "unit": "KG",
-      "price": 18480
-    },
+      "unit": "KG"
+        },
     {
       "name": "VINO",
-      "unit": "L",
-      "price": 5280
-    },
+      "unit": "L"
+       },
     {
       "name": "NARANJA",
-      "unit": "KG",
-      "price": 1760
-    },
+      "unit": "KG"
+       },
     {
       "name": "ATUN",
-      "unit": "KG",
-      "price": 10560
-    },
+      "unit": "KG"
+        },
     {
       "name": "SALSA INGLESA",
-      "unit": "LITRO",
-      "price": 13200
-    },
+      "unit": "LITRO"
+        },
     {
       "name": "SALSA DE TOMATE BOLSA",
-      "unit": "KG",
-      "price": 3080
-    },
+      "unit": "KG"
+       },
     {
       "name": "PAPEL DE ALUMINIO",
-      "unit": "METRO",
-      "price": 440
-    },
+      "unit": "METRO"
+      },
     {
       "name": "PAN DE BURGER DIA DEL P",
-      "unit": "UNIDAD",
-      "price": 264
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "QUESO FACILISTA",
-      "unit": "UNIDAD",
-      "price": 264
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "PAPA RALLADA",
-      "unit": "KG",
-      "price": 3520
-    },
+      "unit": "KG"
+       },
     {
       "name": "NUECES",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "BASE DE HELADOS",
-      "unit": "KG",
-      "price": 4400
-    },
+      "unit": "KG"
+       },
     {
       "name": "COLA",
-      "unit": "LITRO",
-      "price": 3080
-    },
+      "unit": "LITRO"
+       },
     {
       "name": "ENVASES CON TAPA SALSAS",
-      "unit": "UNIDAD",
-      "price": 44
+      "unit": "UNIDAD"
     },
     {
       "name": "JENGIBRE",
-      "unit": "KG",
-      "price": 4400
-    },
+      "unit": "KG"
+       },
     {
       "name": "YOGURT NATURAL",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "UVA/UCHUA",
-      "unit": "KG",
-      "price": 15840
-    },
+      "unit": "KG"
+        },
     {
       "name": "CAMBUR",
-      "unit": "KG",
-      "price": 880
-    },
+      "unit": "KG"
+      },
     {
       "name": "MORA",
-      "unit": "KG",
-      "price": 2640
-    },
+      "unit": "KG"
+       },
     {
       "name": "ZUMO DE DURAZNO",
-      "unit": "LITRO",
-      "price": 5280
-    },
+      "unit": "LITRO"
+       },
     {
       "name": "LECHE LIQUIDA",
-      "unit": "LITRO",
-      "price": 2640
-    },
+      "unit": "LITRO"
+       },
     {
       "name": "JUGOS DE CARTON",
-      "unit": "UNIDAD",
-      "price": 704
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "MANTECA",
-      "unit": "KG",
-      "price": 3080
-    },
+      "unit": "KG"
+       },
     {
       "name": "ESCENCIA DE MANTEQUILLA",
-      "unit": "L",
-      "price": 10560
-    },
+      "unit": "L"
+        },
     {
       "name": "RELAX",
-      "unit": "KG",
-      "price": 7040
-    },
+      "unit": "KG"
+       },
     {
       "name": "PALILLO BROCHETAS",
-      "unit": "UNIDAD",
-      "price": 52.8
-    },
+      "unit": "UNIDAD"
+       },
     {
       "name": "JAMON AHUMADO",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "LOMO DE CERDO",
-      "unit": "KG",
-      "price": 7040
-    },
+      "unit": "KG"
+       },
     {
       "name": "CEREZAS",
-      "unit": "KG",
-      "price": 21120
-    },
+      "unit": "KG"
+        },
     {
       "name": "BRANDY",
-      "unit": "L",
-      "price": 6160
-    },
+      "unit": "L"
+       },
     {
       "name": "LECHOSA",
-      "unit": "KG",
-      "price": 880
-    },
+      "unit": "KG"
+      },
     {
       "name": "PIÑA",
-      "unit": "KG",
-      "price": 880
-    },
+      "unit": "KG"
+      },
     {
       "name": "FRUTOS SECOS",
-      "unit": "KG",
-      "price": 17600
-    },
+      "unit": "KG"
+        },
     {
       "name": "LENTEJAS",
-      "unit": "KG",
-      "price": 1496
-    },
+      "unit": "KG"
+       },
     {
       "name": "HUESO AHUMADO",
-      "unit": "KG",
-      "price": 1760
-    },
+      "unit": "KG"
+       },
     {
       "name": "CHICHARRONES",
-      "unit": "KG",
-      "price": 10560
-    },
+      "unit": "KG"
+        },
     {
       "name": "ANCHOAS",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "QUESO PARMESANO",
-      "unit": "KG",
-      "price": 13200
-    },
+      "unit": "KG"
+        },
     {
       "name": "PESCADO ROBALO",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "APIO",
-      "unit": "KG",
-      "price": 1408
-    },
+      "unit": "KG"
+       },
     {
       "name": "PIMENTON",
-      "unit": "KG",
-      "price": 2464
-    },
+      "unit": "KG"
+       },
     {
       "name": "CEBOLLA BLANCA",
-      "unit": "KG",
-      "price": 1144
-    },
+      "unit": "KG"
+       },
     {
       "name": "REMOLACHA",
-      "unit": "KG",
-      "price": 1672
-    },
+      "unit": "KG"
+       },
     {
       "name": "CELERY",
-      "unit": "KG",
-      "price": 1584
-    },
+      "unit": "KG"
+       },
     {
       "name": "PEREJIL",
-      "unit": "KG",
-      "price": 2640
-    },
+      "unit": "KG"
+       },
     {
       "name": "CILANTRO",
-      "unit": "KG",
-      "price": 1584
-    },
+      "unit": "KG"
+       },
     {
       "name": "BROCOLI",
-      "unit": "KG",
-      "price": 1584
-    },
+      "unit": "KG"
+       },
     {
       "name": "COLIFLOR",
-      "unit": "KG",
-      "price": 1584
-    },
+      "unit": "KG"
+       },
     {
       "name": "ACELGA",
-      "unit": "KG",
-      "price": 1496
-    },
+      "unit": "KG"
+       },
     {
       "name": "AJO PORRO",
-      "unit": "KG",
-      "price": 1496
-    },
+      "unit": "KG"
+       },
     {
       "name": "ESPINACA",
-      "unit": "KG",
-      "price": 1496
-    },
+      "unit": "KG"
+       },
     {
       "name": "BERENJENA",
-      "unit": "KG",
-      "price": 1320
-    },
+      "unit": "KG"
+       },
     {
       "name": "CALABACIN",
-      "unit": "KG",
-      "price": 704
-    },
+      "unit": "KG"
+      },
     {
       "name": "LECHUGA",
-      "unit": "KG",
-      "price": 1144
-    },
+      "unit": "KG"
+       },
     {
       "name": "PLATANO",
-      "unit": "KG",
-      "price": 704
-    },
+      "unit": "KG"
+      },
     {
       "name": "COCO SECO",
-      "unit": "KG",
-      "price": 1408
-    },
+      "unit": "KG"
+       },
     {
       "name": "PARCHITA",
-      "unit": "KG",
-      "price": 1936.0000000000002
+      "unit": "KG"
     },
     {
       "name": "LIMON",
-      "unit": "KG",
-      "price": 2640
-    },
+      "unit": "KG"
+       },
     {
       "name": "AUYAMA",
-      "unit": "KG",
-      "price": 704
-    },
+      "unit": "KG"
+      },
     {
       "name": "REPOLLO",
-      "unit": "KG",
-      "price": 880
-    },
+      "unit": "KG"
+      },
     {
       "name": "VAINITA",
-      "unit": "KG",
-      "price": 1496
-    },
+      "unit": "KG"
+       },
     {
       "name": "CEBOLLIN",
-      "unit": "KG",
-      "price": 1144
-    },
+      "unit": "KG"
+       },
     {
       "name": "ESPARRAGOS",
-      "unit": "KG",
-      "price": 10120
-    },
+      "unit": "KG"
+        },
     {
       "name": "AJI DULCE",
-      "unit": "KG",
-      "price": 2464
-    },
+      "unit": "KG"
+       },
     {
       "name": "MORCILLA",
-      "unit": "KG",
-      "price": 3520
-    },
+      "unit": "KG"
+       },
     {
       "name": "TOMATE CHERRY",
-      "unit": "KG",
-      "price": 4400
-    },
+      "unit": "KG"
+       },
     {
       "name": "CARAOTA NEGRA",
-      "unit": "KG",
-      "price": 1848
-    },
+      "unit": "KG"
+       },
     {
       "name": "ARVEJA AMARILLA",
-      "unit": "KG",
-      "price": 1672
-    },
+      "unit": "KG"
+       },
     {
       "name": "MIEL DE MAPLE",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "PAN SANDWICH",
-      "unit": "KG",
-      "price": 4400
-    },
+      "unit": "KG"
+       },
     {
       "name": "ONOTO",
-      "unit": "KG",
-      "price": 7040
-    },
+      "unit": "KG"
+       },
     {
       "name": "ENVASE PASTICHO",
-      "unit": "UNIDAD",
-      "price": 616
-    },
+      "unit": "UNIDAD"
+      },
     {
       "name": "PEPINILLOS",
-      "unit": "KG",
-      "price": 5280
-    },
+      "unit": "KG"
+       },
     {
       "name": "ACEITE DE OLIVA",
-      "unit": "KG",
-      "price": 7920
-    },
+      "unit": "KG"
+       },
     {
       "name": "SODA",
-      "unit": "KG",
-      "price": 2640
-    },
+      "unit": "KG"
+       },
     {
       "name": "HUESO DE POLLO",
-      "unit": "KG",
-      "price": 1936.0000000000002
+      "unit": "KG"
     },
     {
       "name": "HUESO DE RES",
       "unit": "KG",
-      "price": 1760
-    },
+       },
     {
       "name": "MALTA",
       "unit": "L",
-      "price": 1760
-    },
+       },
     {
       "name": "PAN DE BOCATA",
       "unit": "UNIDAD",
-      "price": 624.8
-    },
+        },
     {
       "name": "QUESO AHUMADO",
       "unit": "KG",
-      "price": 7040
-    },
+       },
     {
       "name": "RUCULA",
       "unit": "KG",
-      "price": 1760
-    },
+       },
     {
       "name": "HUEVOS DE CODORNIZ",
       "unit": "UNIDAD",
-      "price": 88
-    },
+},
     {
       "name": "ENVASE BOCATA",
-      "unit": "UNIDAD",
-      "price": 123.20000000000002
+      "unit": "UNIDAD"
     }
   ],
   "recipes": [
@@ -1062,23 +852,17 @@ window.RECETARIO = {
         {
           "ingredient": "EMPANIZADO",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 360.36000000000007,
-          "total": 360.36000000000007
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA BBQ",
           "qty": 0.3,
-          "unit": "KG",
-          "unitPrice": 2902.24,
-          "total": 870.6719999999999
+          "unit": "KG"
         },
         {
           "ingredient": "PAPAS IMPORTADAS",
           "qty": 0.25,
-          "unit": "KG",
-          "unitPrice": 3080,
-          "total": 770
+          "unit": "KG"
         }
       ]
     },
@@ -1090,37 +874,27 @@ window.RECETARIO = {
         {
           "ingredient": "REPOLLO",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 1760
+          "unit": "KG"
         },
         {
           "ingredient": "MOSTAZA",
           "qty": 0.07,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 369.6
+          "unit": "KG"
         },
         {
           "ingredient": "MAYONESA",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 7040,
-          "total": 1408
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA INGLESA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 396
+          "unit": "KG"
         },
         {
           "ingredient": "AZUCAR",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 158.4
+          "unit": "KG"
         }
       ]
     },
@@ -1132,30 +906,22 @@ window.RECETARIO = {
         {
           "ingredient": "LIMON",
           "qty": 0.07,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 184.8
+          "unit": "KG"
         },
         {
           "ingredient": "MANÍ",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 6600,
-          "total": 1320
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.015,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 19.8
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         }
       ]
     },
@@ -1167,23 +933,17 @@ window.RECETARIO = {
         {
           "ingredient": "LECHE",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 9680,
-          "total": 387.2
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         }
       ]
     },
@@ -1195,30 +955,22 @@ window.RECETARIO = {
         {
           "ingredient": "LECHE",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 9680,
-          "total": 484
+          "unit": "KG"
         },
         {
           "ingredient": "MANTEQUILLA",
           "qty": 0.06,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 316.8
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         }
       ]
     },
@@ -1230,44 +982,32 @@ window.RECETARIO = {
         {
           "ingredient": "PANELA",
           "qty": 0.4,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 528
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA SOYA",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 10736,
-          "total": 1073.6000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON DULCE",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 396
+          "unit": "KG"
         },
         {
           "ingredient": "7 ESPECIAS",
           "qty": 0.06,
-          "unit": "KG",
-          "unitPrice": 36080,
-          "total": 2164.7999999999997
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 39.6
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 264
+          "unit": "KG"
         }
       ]
     },
@@ -1279,37 +1019,27 @@ window.RECETARIO = {
         {
           "ingredient": "MAYONESA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 7040,
-          "total": 281.6
+          "unit": "KG"
         },
         {
           "ingredient": "MAÍZ DULCE",
           "qty": 0.012,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 21.12
+          "unit": "KG"
         },
         {
           "ingredient": "AJO EN POLVO",
           "qty": 0.002,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 3.96
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.002,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 26.400000000000002
+          "unit": "KG"
         }
       ]
     },
@@ -1321,51 +1051,37 @@ window.RECETARIO = {
         {
           "ingredient": "ZANAHORIA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 880,
-          "total": 26.4
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 22.88
+          "unit": "KG"
         },
         {
           "ingredient": "BROCOLI",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 31.68
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.01,
           "unit": "KG",
-          "unitPrice": 1320,
-          "total": 13.200000000000001
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         },
         {
           "ingredient": "AJO",
           "qty": 0.006,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 79.2
+          "unit": "KG"
         },
         {
           "ingredient": "AJONJOLI",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 4400,
-          "total": 44
+          "unit": "KG"
         }
       ]
     },
@@ -1377,30 +1093,22 @@ window.RECETARIO = {
         {
           "ingredient": "CREMA DE LECHE",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 9680,
-          "total": 1936
+          "unit": "KG"
         },
         {
           "ingredient": "MANTEQUILLA",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 528
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         }
       ]
     },
@@ -1412,16 +1120,12 @@ window.RECETARIO = {
         {
           "ingredient": "ANIS",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 11440,
-          "total": 114.4
+          "unit": "KG"
         },
         {
           "ingredient": "ACEITE",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 7920,
-          "total": 237.6
+          "unit": "KG"
         }
       ]
     },
@@ -1433,30 +1137,22 @@ window.RECETARIO = {
         {
           "ingredient": "SAL",
           "qty": 0.002,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 2.64
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.002,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "7 ESPECIAS",
           "qty": 0.0015,
-          "unit": "KG",
-          "unitPrice": 36080,
-          "total": 54.120000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "QUESO PARMESANO",
           "qty": 0.012,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 158.4
+          "unit": "KG"
         }
       ]
     },
@@ -1468,44 +1164,32 @@ window.RECETARIO = {
         {
           "ingredient": "CEBOLLA",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 22.88
+          "unit": "KG"
         },
         {
           "ingredient": "ACEITE",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 79.2
+          "unit": "KG"
         },
         {
           "ingredient": "PEREJIL",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "VINAGRE",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         }
       ]
     },
@@ -1517,44 +1201,32 @@ window.RECETARIO = {
         {
           "ingredient": "LECHUGA",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 2200,
-          "total": 110
+          "unit": "KG"
         },
         {
           "ingredient": "TOMATE",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 2376,
-          "total": 95.04
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA MORADA",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 22.88
+          "unit": "KG"
         },
         {
           "ingredient": "ADEREZO CESAR",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 8753.8,
-          "total": 437.69
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.008,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 10.56
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         }
       ]
     },
@@ -1566,44 +1238,32 @@ window.RECETARIO = {
         {
           "ingredient": "LIMON",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "AJÍ DULCE",
           "qty": 0.015,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 36.96
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA MORADA",
           "qty": 0.015,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 17.16
+          "unit": "KG"
         },
         {
           "ingredient": "AJO EN DIENTE",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.008,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 10.56
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         }
       ]
     },
@@ -1615,65 +1275,48 @@ window.RECETARIO = {
         {
           "ingredient": "PAPA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 70.4
+          "unit": "KG"
         },
         {
           "ingredient": "AJÍ DULCE",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 49.28
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO CLARO",
           "qty": 0.05,
           "unit": "KG",
-          "unitPrice": 1328.8000000000002,
-          "total": 66.44000000000001
+          
         },
         {
           "ingredient": "CEBOLLA BLANCA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 34.32
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 49.28
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 15.84
+          "unit": "KG"
         },
         {
           "ingredient": "AJO EN DIENTE",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -1685,65 +1328,47 @@ window.RECETARIO = {
         {
           "ingredient": "PAPA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 70.4
+          "unit": "KG"
         },
         {
           "ingredient": "AJÍ DULCE",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 49.28
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO CLARO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 1328.8000000000002,
-          "total": 66.44000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA BLANCA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 34.32
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 73.92
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 15.84
+          "unit": "KG"
         },
         {
           "ingredient": "AJO EN DIENTE",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -1755,72 +1380,52 @@ window.RECETARIO = {
         {
           "ingredient": "PAPA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 52.8
+          "unit": "KG"
         },
         {
           "ingredient": "AJÍ DULCE",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 49.28
+          "unit": "KG"
         },
         {
           "ingredient": "ZANAHORIA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 880,
-          "total": 35.2
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO OSCURO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 1636.8000000000002,
-          "total": 81.84000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA BLANCA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 34.32
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 49.28
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 15.84
+          "unit": "KG"
         },
         {
           "ingredient": "AJO EN DIENTE",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -1832,51 +1437,37 @@ window.RECETARIO = {
         {
           "ingredient": "PAPA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 52.8
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO CLARO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 1328.8000000000002,
-          "total": 66.44000000000001
+          "unit": "KG"  
         },
         {
           "ingredient": "CEBOLLIN",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 22.88
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 15.84
+          "unit": "KG"
         },
         {
           "ingredient": "HUEVO",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 264,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -1888,51 +1479,37 @@ window.RECETARIO = {
         {
           "ingredient": "PAPA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 52.8
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO OSCURO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 1636.8000000000002,
-          "total": 81.84000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLIN",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 22.88
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.008,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 12.672
+          "unit": "KG"
         },
         {
           "ingredient": "HUESO AHUMADO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 35.2
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -1944,51 +1521,37 @@ window.RECETARIO = {
         {
           "ingredient": "PAPA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 70.4
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO OSCURO",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1636.8000000000002,
-          "total": 65.47200000000001
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLIN",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 22.88
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 15.84
+          "unit": "KG"
         },
         {
           "ingredient": "HUESO AHUMADO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 35.2
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -2000,51 +1563,37 @@ window.RECETARIO = {
         {
           "ingredient": "PAPA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 70.4
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO CLARO",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1328.8000000000002,
-          "total": 53.15200000000001
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLIN",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 22.88
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 15.84
+          "unit": "KG"
         },
         {
           "ingredient": "HUESO AHUMADO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 35.2
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -2056,58 +1605,42 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "PAPA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 70.4
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO OSCURO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 1636.8000000000002,
-          "total": 81.84000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLIN",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 22.88
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 15.84
+          "unit": "KG"
         },
         {
           "ingredient": "PASTA LARGA",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1496,
-          "total": 29.92
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -2119,51 +1652,37 @@ window.RECETARIO = {
         {
           "ingredient": "PAPA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 70.4
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO OSCURO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 1636.8000000000002,
-          "total": 81.84000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "AJI DULCE",
           "qty": 0.015,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 36.96
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 15.84
+          "unit": "KG"
         },
         {
           "ingredient": "LAGARTO SIN HUESO",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 8624,
-          "total": 258.71999999999997
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -2175,37 +1694,27 @@ window.RECETARIO = {
         {
           "ingredient": "CREMA DE LECHE",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 9680,
-          "total": 290.4
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA BLANCA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 34.32
+          "unit": "KG"
         },
         {
           "ingredient": "MAÍZ DULCE",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 52.8
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.008,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 10.56
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         }
       ]
     },
@@ -2217,30 +1726,22 @@ window.RECETARIO = {
         {
           "ingredient": "CARNE MOLIDA",
           "qty": 0.12,
-          "unit": "KG",
-          "unitPrice": 8624,
-          "total": 1034.8799999999999
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA NAPOLE",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 2992.8800000000006,
-          "total": 119.71520000000002
+          "unit": "KG"
         },
         {
           "ingredient": "QUESO PARMESANO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "TOSTADA DE PAN",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 52.8,
-          "total": 52.8
+          "unit": "KG"
         }
       ]
     },
@@ -2252,44 +1753,32 @@ window.RECETARIO = {
         {
           "ingredient": "SALSA NAPOLE",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 2992.8800000000006,
-          "total": 299.28800000000007
+          "unit": "KG"
         },
         {
           "ingredient": "ANCHOAS",
           "qty": 0.035,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 462.00000000000006
+          "unit": "KG"
         },
         {
           "ingredient": "ACEITUNAS NEGRAS",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 9680,
-          "total": 290.4
+          "unit": "KG"
         },
         {
           "ingredient": "QUESO PARMESANO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 660
+          "unit": "KG"
         },
         {
           "ingredient": "ALCAPARRAS",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 6160,
-          "total": 246.4
+          "unit": "KG"
         },
         {
           "ingredient": "TOSTADA DE PAN",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 52.8,
-          "total": 52.8
+          "unit": "KG"
         }
       ]
     },
@@ -2301,44 +1790,32 @@ window.RECETARIO = {
         {
           "ingredient": "SALSA NAPOLE",
           "qty": 0.12,
-          "unit": "KG",
-          "unitPrice": 2992.8800000000006,
-          "total": 359.14560000000006
+          "unit": "KG"
         },
         {
           "ingredient": "VINO BLANCO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 105.60000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "ALBAHACA BLANCA",
           "qty": 0.002,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 10.56
+          "unit": "KG"
         },
         {
           "ingredient": "QUESO PECORINO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 660
+          "unit": "KG"
         },
         {
           "ingredient": "TOCINETA AHUMADA",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 660
+          "unit": "KG"
         },
         {
           "ingredient": "TOSTADA DE PAN",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 52.8,
-          "total": 52.8
+          "unit": "KG"
         }
       ]
     },
@@ -2350,44 +1827,32 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 79.2
+          "unit": "KG"
         },
         {
           "ingredient": "VINO BLANCO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 105.60000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "TOMILLO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 14080,
-          "total": 140.8
+          "unit": "KG"
         },
         {
           "ingredient": "AJO DIENTE",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 13.200000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         }
       ]
     },
@@ -2399,44 +1864,32 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE SOYA O GIRASOL",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "VINO TINTO",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 158.4
+          "unit": "KG"
         },
         {
           "ingredient": "7 ESPECIES",
           "qty": 0.006,
-          "unit": "KG",
-          "unitPrice": 36080,
-          "total": 216.48000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "AJO DIENTE",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.002,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 2.64
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.001,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 13.200000000000001
+          "unit": "KG"
         }
       ]
     },
@@ -2448,44 +1901,32 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "SOFRITO",
           "qty": 0.08,
-          "unit": "KG",
-          "unitPrice": 2635.16,
-          "total": 210.81279999999998
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO OSCURO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 1636.8000000000002,
-          "total": 81.84000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "AJO DIENTE",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.001,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 1.32
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         }
       ]
     },
@@ -2497,51 +1938,37 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "TAMARINDO",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1760,
-          "total": 52.8
+          "unit": "KG"
         },
         {
           "ingredient": "OREGANO",
           "qty": 0.001,
-          "unit": "KG",
-          "unitPrice": 14080,
-          "total": 14.08
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO OSCURO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 1636.8000000000002,
-          "total": 81.84000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "AJO DIENTE",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.001,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 1.32
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         }
       ]
     },
@@ -2553,79 +1980,57 @@ window.RECETARIO = {
         {
           "ingredient": "LOMITO",
           "qty": 0.08,
-          "unit": "KG",
-          "unitPrice": 14080,
-          "total": 1126.4
+          "unit": "KG"
         },
         {
           "ingredient": "PASTA LARGA",
           "qty": 0.15,
-          "unit": "KG",
-          "unitPrice": 1496,
-          "total": 224.4
+          "unit": "KG"
         },
         {
           "ingredient": "AJÍ DULCE",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 73.92
+          "unit": "KG"
         },
         {
           "ingredient": "TOMATE CHERRY",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 4400,
-          "total": 220
+          "unit": "KG"
         },
         {
           "ingredient": "FONDO OSCURO",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1636.8000000000002,
-          "total": 49.104000000000006
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA MORADA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 34.32
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 73.92
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA SIRACHA",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 4612.96,
-          "total": 461.29600000000005
+          "unit": "KG"
         },
         {
           "ingredient": "AJO EN DIENTE",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.012,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 15.84
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 52.800000000000004
+          "unit": "KG"
         }
       ]
     },
@@ -2637,16 +2042,12 @@ window.RECETARIO = {
         {
           "ingredient": "AZUCAR",
           "qty": 0.025,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 39.6
+          "unit": "KG"
         },
         {
           "ingredient": "HIELO",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 1408,
-          "total": 42.239999999999995
+          "unit": "KG"
         }
       ]
     },
@@ -2658,51 +2059,37 @@ window.RECETARIO = {
         {
           "ingredient": "MOSTAZA",
           "qty": 0.002,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 10.56
+          "unit": "KG"
         },
         {
           "ingredient": "OREGANO",
           "qty": 0.0002,
-          "unit": "KG",
-          "unitPrice": 14080,
-          "total": 2.8160000000000003
+          "unit": "KG"
         },
         {
           "ingredient": "CERVEZA",
           "qty": 0.8,
-          "unit": "KG",
-          "unitPrice": 1408,
-          "total": 1126.4
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON DULCE",
           "qty": 0.002,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "AJO",
           "qty": 0.002,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.0015,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 1.98
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.0015,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 19.8
+          "unit": "KG"
         }
       ]
     },
@@ -2714,37 +2101,27 @@ window.RECETARIO = {
         {
           "ingredient": "NAPOLE",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 2992.8800000000006,
-          "total": 299.28800000000007
+          "unit": "KG"
         },
         {
           "ingredient": "SOFRITO",
           "qty": 0.06,
-          "unit": "KG",
-          "unitPrice": 2635.16,
-          "total": 158.10959999999997
+          "unit": "KG"
         },
         {
           "ingredient": "AJO EN DIENTE",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.008,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 10.56
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 52.800000000000004
+          "unit": "KG"
         }
       ]
     },
@@ -2756,51 +2133,37 @@ window.RECETARIO = {
         {
           "ingredient": "MASA DE PASTA",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 4.846914285714286,
-          "total": 0.4846914285714286
+          "unit": "KG"
         },
         {
           "ingredient": "QUESO MOZZARELLA",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 9020,
-          "total": 451
+          "unit": "KG"
         },
         {
           "ingredient": "JAMON",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 7920,
-          "total": 396
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA BECHAMEL",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 1435.5439999999999,
-          "total": 143.5544
+          "unit": "KG"
         },
         {
           "ingredient": "PORCION DE PAN",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 132,
-          "total": 132
+          "unit": "KG"
         },
         {
           "ingredient": "QUESO AÑO",
           "qty": 0.015,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 198
+          "unit": "KG"
         },
         {
           "ingredient": "ENVASE",
           "qty": null,
-          "unit": "",
-          "unitPrice": null,
-          "total": null
+          "unit": ""
         }
       ]
     },
@@ -2812,44 +2175,31 @@ window.RECETARIO = {
         {
           "ingredient": "PAN DE BOCATA",
           "qty": 1,
-          "unit": "UNIDAD",
-          "unitPrice": 624.8,
-          "total": 624.8
+          "unit": "UNIDAD"
         },
         {
           "ingredient": "BASE BOCATA",
           "qty": 1,
-          "unit": "UNIDAD",
-          "unitPrice": 0,
-          "total": 0
-        },
+          "unit": "UNIDAD"},
         {
           "ingredient": "QUESO AHUMADO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 14080,
-          "total": 704
+          "unit": "KG"
         },
         {
           "ingredient": "TOMATE CONFITADO",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 105.60000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "ALIOLI",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 4400,
-          "total": 88
+          "unit": "KG"
         },
         {
           "ingredient": "ENVASE",
           "qty": 1,
-          "unit": "UNIDAD",
-          "unitPrice": 123.20000000000002,
-          "total": null
+          "unit": "UNIDAD"
         }
       ]
     },
@@ -2861,44 +2211,32 @@ window.RECETARIO = {
         {
           "ingredient": "PAN DE BOCATA",
           "qty": 1,
-          "unit": "UNIDAD",
-          "unitPrice": 624.8,
-          "total": 624.8
+          "unit": "UNIDAD"
         },
         {
           "ingredient": "BASE BOCATA",
           "qty": 1,
-          "unit": "UNIDAD",
-          "unitPrice": 0,
-          "total": 0
+          "unit": "UNIDAD"
         },
         {
           "ingredient": "HUEVO DE CODORNIZ",
           "qty": 3,
           "unit": "UNIDAD",
-          "unitPrice": 88,
-          "total": 264
-        },
+},
         {
           "ingredient": "QUESO MOZZARELLA",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 4400,
-          "total": 440
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA CARAMELIZADA",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 13.850697142857143,
-          "total": 0.6925348571428572
+          "unit": "KG"
         },
         {
           "ingredient": "ENVASE",
           "qty": 1,
-          "unit": "UNIDAD",
-          "unitPrice": 123.20000000000002,
-          "total": null
+          "unit": "UNIDAD"
         }
       ]
     },
@@ -2910,44 +2248,32 @@ window.RECETARIO = {
         {
           "ingredient": "PAN DE BOCATA",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 624.8,
-          "total": 624.8
+          "unit": "KG"
         },
         {
           "ingredient": "BASE BOCATA",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 0,
-          "total": 0
+          "unit": "KG"
         },
         {
           "ingredient": "ACEITUNAS NEGRAS",
           "qty": 0.015,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 39.6
+          "unit": "KG"
         },
         {
           "ingredient": "QUESO MOZZARELLA CRUNCH",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 7920,
-          "total": 792
+          "unit": "KG"
         },
         {
           "ingredient": "TOMATE CONFITADO",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 3267.9680000000003,
-          "total": 130.71872000000002
+          "unit": "KG"
         },
         {
           "ingredient": "ENVASE",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 123.20000000000002,
-          "total": null
+          "unit": "KG"
         }
       ]
     }
@@ -2961,44 +2287,32 @@ window.RECETARIO = {
         {
           "ingredient": "AVENA",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 3784,
-          "total": 756.8000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "HUEVO",
           "qty": 1,
-          "unit": "UNIDAD",
-          "unitPrice": 264,
-          "total": 264
+          "unit": "UNIDAD"
         },
         {
           "ingredient": "MANTEQUILLA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 158.4
+          "unit": "KG"
         },
         {
           "ingredient": "POLVO DE HORNEAR",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 4400,
-          "total": 88
+          "unit": "KG"
         },
         {
           "ingredient": "AZUCAR",
           "qty": 0.12,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 190.07999999999998
+          "unit": "KG"
         },
         {
           "ingredient": "AGUA",
           "qty": 0.3,
-          "unit": "KG",
-          "unitPrice": null,
-          "total": null
+          "unit": "KG"
         }
       ]
     },
@@ -3010,30 +2324,22 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE SOYA",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "AJO",
           "qty": 0.012,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 158.4
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.008,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 10.56
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         }
       ]
     },
@@ -3045,23 +2351,17 @@ window.RECETARIO = {
         {
           "ingredient": "MORA",
           "qty": 0.3,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 792
+          "unit": "KG"
         },
         {
           "ingredient": "AZUCAR",
           "qty": 0.3,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 475.2
+          "unit": "KG"
         },
         {
           "ingredient": "LIMON",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 132
+          "unit": "KG"
         }
       ]
     },
@@ -3073,51 +2373,37 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE DE HUMO",
           "qty": 0.6,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 1584
+          "unit": "KG"
         },
         {
           "ingredient": "MOSTAZA",
           "qty": 0.15,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 792
+          "unit": "KG"
         },
         {
           "ingredient": "KETCHUP",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 3080,
-          "total": 616
+          "unit": "KG"
         },
         {
           "ingredient": "AJO MOLIDO",
           "qty": 0.07,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 924.0000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "LIMON",
           "qty": 0.15,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 396
+          "unit": "KG"
         },
         {
           "ingredient": "PEPINILLOS",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 105.60000000000001
+          "unit": "KG"
         }
       ]
     },
@@ -3129,23 +2415,17 @@ window.RECETARIO = {
         {
           "ingredient": "MAICENA",
           "qty": 0.3,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 792
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 264
+          "unit": "KG"
         }
       ]
     },
@@ -3157,9 +2437,7 @@ window.RECETARIO = {
         {
           "ingredient": "PIMIENTA",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 660
+          "unit": "KG"
         }
       ]
     },
@@ -3171,37 +2449,27 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 528
+          "unit": "KG"
         },
         {
           "ingredient": "LIMON",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "AJO",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 1320
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 13.200000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 660
+          "unit": "KG"
         }
       ]
     },
@@ -3219,44 +2487,32 @@ window.RECETARIO = {
         {
           "ingredient": "ROCOTO",
           "qty": 0.12,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 295.68
+          "unit": "KG"
         },
         {
           "ingredient": "KETCHUP",
           "qty": 0.4,
-          "unit": "KG",
-          "unitPrice": 3080,
-          "total": 1232
+          "unit": "KG"
         },
         {
           "ingredient": "VINAGRE",
           "qty": 0.6,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 1584
+          "unit": "KG"
         },
         {
           "ingredient": "AZUCAR",
           "qty": 0.4,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 633.6
+          "unit": "KG"
         },
         {
           "ingredient": "AGUA",
           "qty": 0.6,
-          "unit": "KG",
-          "unitPrice": null,
-          "total": null
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.06,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 79.2
+          "unit": "KG"
         }
       ]
     },
@@ -3268,58 +2524,42 @@ window.RECETARIO = {
         {
           "ingredient": "ANCHOAS",
           "qty": 0.12,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 1584
+          "unit": "KG"
         },
         {
           "ingredient": "QUESO PARMESANO",
           "qty": 0.11,
-          "unit": "KG",
-          "unitPrice": 7480,
-          "total": 822.8
+          "unit": "KG"
         },
         {
           "ingredient": "AJO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "MOSTAZA",
           "qty": 0.07,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 369.6
+          "unit": "KG"
         },
         {
           "ingredient": "MAYONESA",
           "qty": 0.7,
-          "unit": "KG",
-          "unitPrice": 7040,
-          "total": 4928
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA INGLESA",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.025,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 33
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 396
+          "unit": "KG"
         }
       ]
     },
@@ -3331,72 +2571,52 @@ window.RECETARIO = {
         {
           "ingredient": "AJI MOLIDO",
           "qty": 0.006,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 79.2
+          "unit": "KG"
         },
         {
           "ingredient": "PEREJIL",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "AJO EN DIENTE",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA NEGRA",
           "qty": 0.006,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 79.2
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON DULCE",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         },
         {
           "ingredient": "AGUA",
           "qty": 0.08,
-          "unit": "KG",
-          "unitPrice": null,
-          "total": null
+          "unit": "KG"
         },
         {
           "ingredient": "VINAGRE DE VINO",
           "qty": 0.08,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 211.20000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "ACEITE",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 105.60000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "ACEITE DE OLIVA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 7920,
-          "total": 316.8
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 5.28
+          "unit": "KG"
         }
       ]
     },
@@ -3408,51 +2628,37 @@ window.RECETARIO = {
         {
           "ingredient": "JENGIBRE",
           "qty": 0.06,
-          "unit": "KG",
-          "unitPrice": 4400,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "AJO DIENTE",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 528
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA MORADA",
           "qty": 0.3,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 343.2
+          "unit": "KG"
         },
         {
           "ingredient": "AJI DULCE",
           "qty": 0.3,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 739.1999999999999
+          "unit": "KG"
         },
         {
           "ingredient": "LIMONCILLO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2200,
-          "total": 44
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 13.200000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         }
       ]
     },
@@ -3464,37 +2670,27 @@ window.RECETARIO = {
         {
           "ingredient": "ALMIDON DE MAÍZ",
           "qty": 0.06,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 158.4
+          "unit": "KG"
         },
         {
           "ingredient": "SODA",
           "qty": 0.06,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 158.4
+          "unit": "KG"
         },
         {
           "ingredient": "POLVO DE HORNEAR",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 4400,
-          "total": 88
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 13.200000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.006,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 79.2
+          "unit": "KG"
         }
       ]
     },
@@ -3506,44 +2702,32 @@ window.RECETARIO = {
         {
           "ingredient": "ALMIDON DE MAÍZ",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON DULCE",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "HUEVO",
           "qty": 0.6,
-          "unit": "UNIDAD",
-          "unitPrice": 264,
-          "total": 158.4
+          "unit": "UNIDAD"
         },
         {
           "ingredient": "POLVO DE HORNEAR",
           "qty": 0.003,
           "unit": "KG",
-          "unitPrice": 4400,
-          "total": 13.200000000000001
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -3561,44 +2745,32 @@ window.RECETARIO = {
         {
           "ingredient": "CEBOLLA",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 228.8
+          "unit": "KG"
         },
         {
           "ingredient": "OREGANO MOLIDO",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 14080,
-          "total": 422.4
+          "unit": "KG"
         },
         {
           "ingredient": "AZUCAR",
           "qty": 0.07,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 110.88000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 13.200000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "AJO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 264
+          "unit": "KG"
         }
       ]
     },
@@ -3610,30 +2782,22 @@ window.RECETARIO = {
         {
           "ingredient": "LIMON",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "MAYONESA",
           "qty": 0.6,
-          "unit": "KG",
-          "unitPrice": 7040,
-          "total": 4224
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 26.400000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         }
       ]
     },
@@ -3645,37 +2809,27 @@ window.RECETARIO = {
         {
           "ingredient": "FONDO OSCURO",
           "qty": 0.5,
-          "unit": "KG",
-          "unitPrice": 0,
-          "total": 0
+          "unit": "KG"
         },
         {
           "ingredient": "VINO TINTO",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 528
+          "unit": "KG"
         },
         {
           "ingredient": "AJO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 132
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.007,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 9.24
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 52.800000000000004
+          "unit": "KG"
         }
       ]
     },
@@ -3687,51 +2841,37 @@ window.RECETARIO = {
         {
           "ingredient": "CEBOLLA BLANCA",
           "qty": 0.29,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 331.76
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLIN",
           "qty": 0.3,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 343.2
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON",
           "qty": 0.25,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 616
+          "unit": "KG"
         },
         {
           "ingredient": "AJI DULCE",
           "qty": 0.072,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 177.408
+          "unit": "KG"
         },
         {
           "ingredient": "AJO PORRO",
           "qty": 0.46,
-          "unit": "KG",
-          "unitPrice": 1496,
-          "total": 688.1600000000001
+          "unit": "KG"
         },
         {
           "ingredient": "AJO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 660
+          "unit": "KG"
         },
         {
           "ingredient": "MOSTAZA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 158.4
+          "unit": "KG"
         }
       ]
     },
@@ -3743,58 +2883,42 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE SOYA O GIRASOL",
           "qty": 0.15,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 396
+          "unit": "KG"
         },
         {
           "ingredient": "AJI DULCE",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 492.8
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON",
           "qty": 0.25,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 616
+          "unit": "KG"
         },
         {
           "ingredient": "TOMATE",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 2376,
-          "total": 475.20000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "AJO EN DIENTE",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "ONOTO",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 4400,
-          "total": 88
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 3.96
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.001,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 13.200000000000001
+          "unit": "KG"
         }
       ]
     },
@@ -3806,51 +2930,37 @@ window.RECETARIO = {
         {
           "ingredient": "CEBOLLA BLANCA",
           "qty": 0.3,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 0.09
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLIN",
           "qty": 0.4,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 0.16000000000000003
+          "unit": "KG"
         },
         {
           "ingredient": "PIMENTON",
           "qty": 0.25,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 0.0625
+          "unit": "KG"
         },
         {
           "ingredient": "AJI DULCE",
           "qty": 0.09,
-          "unit": "KG",
-          "unitPrice": 2464,
-          "total": 0.0081
+          "unit": "KG"
         },
         {
           "ingredient": "CELERY",
           "qty": 0.25,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 0.0625
+          "unit": "KG"
         },
         {
           "ingredient": "AJO",
           "qty": 0.05,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 0.0025000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "MOSTAZA",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 0.0009
+          "unit": "KG"
         }
       ]
     },
@@ -3862,30 +2972,22 @@ window.RECETARIO = {
         {
           "ingredient": "CELERY",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 316.8
+          "unit": "KG"
         },
         {
           "ingredient": "ZANAHORIA",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 880,
-          "total": 176
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA BLANCA",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 228.8
+          "unit": "KG"
         },
         {
           "ingredient": "AGUA",
           "qty": 3,
-          "unit": "KG",
-          "unitPrice": null,
-          "total": null
+          "unit": "KG"
         }
       ]
     },
@@ -3897,37 +2999,27 @@ window.RECETARIO = {
         {
           "ingredient": "CELERY",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 316.8
+          "unit": "KG"
         },
         {
           "ingredient": "ZANAHORIA",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 880,
-          "total": 176
+          "unit": "KG"
         },
         {
           "ingredient": "CEBOLLA BLANCA",
           "qty": 0.2,
-          "unit": "KG",
-          "unitPrice": 1144,
-          "total": 228.8
+          "unit": "KG"
         },
         {
           "ingredient": "VINO TINTO",
           "qty": 0.15,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 792
+          "unit": "KG"
         },
         {
           "ingredient": "AGUA",
           "qty": 3,
-          "unit": "KG",
-          "unitPrice": null,
-          "total": null
+          "unit": "KG"
         }
       ]
     },
@@ -3939,44 +3031,32 @@ window.RECETARIO = {
         {
           "ingredient": "AGUA",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": null,
-          "total": null
+          "unit": "KG"
         },
         {
           "ingredient": "MANTEQUILLA",
           "qty": 0.08,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 422.40000000000003
+          "unit": "KG"
         },
         {
           "ingredient": "HARINA TRIGO",
           "qty": 0.08,
-          "unit": "KG",
-          "unitPrice": 1232,
-          "total": 98.56
+          "unit": "KG"
         },
         {
           "ingredient": "AJO MOLIDO",
           "qty": 0.012,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 158.4
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 5.28
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         }
       ]
     },
@@ -3988,44 +3068,32 @@ window.RECETARIO = {
         {
           "ingredient": "SALSA KETCHUP",
           "qty": 0.4,
-          "unit": "KG",
-          "unitPrice": 3080,
-          "total": 1232
+          "unit": "KG"
         },
         {
           "ingredient": "VINAGRE",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 105.60000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA SOYA",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 10736,
-          "total": 429.44
+          "unit": "KG"
         },
         {
           "ingredient": "AJO DIENTE",
           "qty": 0.03,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 396
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 13.200000000000001
+          "unit": "KG"        
         },
         {
           "ingredient": "PIMIENTA",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 66
+          "unit": "KG"
         }
       ]
     },
@@ -4037,37 +3105,27 @@ window.RECETARIO = {
         {
           "ingredient": "HUEVO",
           "qty": 0.4,
-          "unit": "KG",
-          "unitPrice": 264,
-          "total": 105.60000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.008,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 10.56
+          "unit": "KG"
         },
         {
           "ingredient": "AJO MOLIDO",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA NEGRA",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA SOYA",
           "qty": 0.015,
-          "unit": "KG",
-          "unitPrice": 10736,
-          "total": 161.04
+          "unit": "KG"
         }
       ]
     },
@@ -4079,30 +3137,22 @@ window.RECETARIO = {
         {
           "ingredient": "HUEVO",
           "qty": 1,
-          "unit": "KG",
-          "unitPrice": 264,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.008,
           "unit": "KG",
-          "unitPrice": 1320,
-          "total": 10.56
         },
         {
           "ingredient": "AJO MOLIDO",
           "qty": 0.003,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 39.6
+          "unit": "KG"
         },
         {
           "ingredient": "OREGANO MOLIDO",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 14080,
-          "total": 56.32
+          "unit": "KG"
         }
       ]
     },
@@ -4114,37 +3164,27 @@ window.RECETARIO = {
         {
           "ingredient": "MANTEQUILLA",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 5280,
-          "total": 528
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
           "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
         },
         {
           "ingredient": "SALSA DE SOYA",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 10736,
-          "total": 214.72
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA NEGRA",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 22880,
-          "total": 91.52
+          "unit": "KG"
         },
         {
           "ingredient": "VINAGRE",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 26.400000000000002
+          "unit": "KG"
         }
       ]
     },
@@ -4156,37 +3196,27 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE VEGETAL",
           "qty": 0.12,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 316.8
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 13.200000000000001
+          "unit": "KG"
         },
         {
           "ingredient": "AJO MOLIDO",
           "qty": 0.007,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 92.4
+          "unit": "KG"
         },
         {
           "ingredient": "OREGANO MOLIDO",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 14080,
-          "total": 140.8
+          "unit": "KG"
         },
         {
           "ingredient": "AZUCAR",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 31.68
+          "unit": "KG"
         }
       ]
     },
@@ -4198,37 +3228,27 @@ window.RECETARIO = {
         {
           "ingredient": "MANTEQUILLA",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 1320
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 352,
-          "total": 1.76
+          "unit": "KG"
         },
         {
           "ingredient": "SALSA DE SOYA",
           "qty": 0.02,
-          "unit": "KG",
-          "unitPrice": 10736,
-          "total": 214.72
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA NEGRA",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 6.336
+          "unit": "KG"
         },
         {
           "ingredient": "VINAGRE",
           "qty": 0.01,
-          "unit": "KG",
-          "unitPrice": 22000,
-          "total": 220
+          "unit": "KG"
         }
       ]
     },
@@ -4240,30 +3260,22 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.005,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 6.6000000000000005
+          "unit": "KG"
         },
         {
           "ingredient": "CILANTRO",
           "qty": 0.1,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 264
+          "unit": "KG"
         },
         {
           "ingredient": "PIMIENTA NEGRA",
           "qty": 0.004,
-          "unit": "KG",
-          "unitPrice": 13200,
-          "total": 52.800000000000004
+          "unit": "KG"
         }
       ]
     },
@@ -4275,23 +3287,17 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE",
           "qty": 0.08,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 211.20000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "AZUCAR",
           "qty": 0.06,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 95.03999999999999
+          "unit": "KG"
         }
       ]
     },
@@ -4303,23 +3309,17 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE",
           "qty": 0.08,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 211.20000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "AZUCAR",
           "qty": 0.09,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 142.56
+          "unit": "KG"
         }
       ]
     },
@@ -4331,30 +3331,22 @@ window.RECETARIO = {
         {
           "ingredient": "ACEITE",
           "qty": 0.08,
-          "unit": "KG",
-          "unitPrice": 2640,
-          "total": 211.20000000000002
+          "unit": "KG"
         },
         {
           "ingredient": "SAL",
           "qty": 0.04,
-          "unit": "KG",
-          "unitPrice": 1320,
-          "total": 52.800000000000004
+          "unit": "KG"
         },
         {
           "ingredient": "AZUCAR",
           "qty": 0.09,
-          "unit": "KG",
-          "unitPrice": 1584,
-          "total": 142.56
+          "unit": "KG"
         },
         {
           "ingredient": "HUEVO",
           "qty": 3,
-          "unit": "UNIDAD",
-          "unitPrice": 264,
-          "total": 792
+          "unit": "UNIDAD"
         }
       ]
     }
