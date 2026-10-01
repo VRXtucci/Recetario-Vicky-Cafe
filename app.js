@@ -657,9 +657,29 @@ function dashboard() {
         "Panel general";
 
 
+    const featured = [
+        "BOCATA DE RES",
+        "BOCATA POLLO",
+        "BOCATA CAPRESSA",
+        "PURÉ DE PAPA",
+        "CREMA DE APIO",
+        "CREMA DE AUYAMA",
+        "ENSALADA COLESLAW",
+        "LOMO EN SALSA",
+        "PECHUGA CREMOSA",
+    ];
+
     const top =
-        [...D.recipes]
-            .slice(0, 8);
+        featured
+            .map(
+                name =>
+                    D.recipes.find(
+                        r =>
+                            norm(r.name) ===
+                            norm(name)
+                    )
+            )
+            .filter(Boolean);
 
 
     app.innerHTML = `
