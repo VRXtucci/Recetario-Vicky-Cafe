@@ -847,7 +847,6 @@ window.RECETARIO = {
     {
       name: "SERVICIO DE ALAS DE POLLO",
       portions: null,
-      total: 2001.03,
       ingredients: [
         {
           ingredient: "ALAS DE POLLO",
@@ -874,7 +873,6 @@ window.RECETARIO = {
     {
       name: "ENSALADA COLESLAW",
       portions: null,
-      total: 4092.0,
       ingredients: [
         {
           ingredient: "REPOLLO",
@@ -916,7 +914,6 @@ window.RECETARIO = {
     {
       name: "ARROZ MEDITERRANEO",
       portions: null,
-      total: 1656.6,
       ingredients: [
         {
           ingredient: "ARROZ BLANCO",
@@ -948,7 +945,6 @@ window.RECETARIO = {
     {
       name: "PURÉ DE APIO",
       portions: null,
-      total: 545.6,
       ingredients: [
         {
           ingredient: "APIO",
@@ -975,7 +971,6 @@ window.RECETARIO = {
     {
       name: "PURÉ DE PAPA",
       portions: null,
-      total: 959.2,
       ingredients: [
         {
           ingredient: "PAPA",
@@ -1007,7 +1002,6 @@ window.RECETARIO = {
     {
       name: "ASADO NEGRO",
       portions: null,
-      total: 4466.0,
       ingredients: [
         {
           ingredient: "MUCHACHO REDONDO",
@@ -1049,7 +1043,6 @@ window.RECETARIO = {
     {
       name: "POLLO FRÍO",
       portions: null,
-      total: 359.48,
       ingredients: [
         {
           ingredient: "PECHUGA DE POLLO",
@@ -1086,7 +1079,6 @@ window.RECETARIO = {
     {
       name: "VEGETALES GRILLÉ",
       portions: null,
-      total: 256.96,
       ingredients: [
         {
           ingredient: "TOMATE",
@@ -1133,7 +1125,6 @@ window.RECETARIO = {
     {
       name: "CREMOSO DE APIO",
       portions: null,
-      total: 2622.4,
       ingredients: [
         {
           ingredient: "APIO",
@@ -1165,7 +1156,6 @@ window.RECETARIO = {
     {
       name: "BUÑUELOS DE YUCA",
       portions: null,
-      total: 352.0,
       ingredients: [
         {
           ingredient: "MASA PAA BUÑUELOS",
@@ -1187,7 +1177,6 @@ window.RECETARIO = {
     {
       name: "MAZORCA GRILLADA",
       portions: null,
-      total: 241.56,
       ingredients: [
         {
           ingredient: "MAZORCA",
@@ -1219,7 +1208,6 @@ window.RECETARIO = {
     {
       name: "ENSALADA PICO E GALLO",
       portions: null,
-      total: 240.68,
       ingredients: [
         {
           ingredient: "TOMATE",
@@ -1261,7 +1249,6 @@ window.RECETARIO = {
     {
       name: "ENSALADA CRUDA",
       portions: null,
-      total: 742.17,
       ingredients: [
         {
           ingredient: "MAIZ DULCE",
@@ -1303,7 +1290,6 @@ window.RECETARIO = {
     {
       name: "ENSALADA ACEVICHADA",
       portions: null,
-      total: 315.48,
       ingredients: [
         {
           ingredient: "JENGIBRE",
@@ -1345,7 +1331,6 @@ window.RECETARIO = {
     {
       name: "CREMA DE APIO",
       portions: null,
-      total: 397.76,
       ingredients: [
         {
           ingredient: "APIO",
@@ -1402,7 +1387,6 @@ window.RECETARIO = {
     {
       name: "CREMA DE ESPINACAS",
       portions: null,
-      total: 396.0,
       ingredients: [
         {
           ingredient: "ESPINACA",
@@ -1459,7 +1443,6 @@ window.RECETARIO = {
     {
       name: "CREMA DE AUYAMA",
       portions: null,
-      total: 404.36,
       ingredients: [
         {
           ingredient: "AUYAMA",
@@ -1521,7 +1504,6 @@ window.RECETARIO = {
     {
       name: "PIZCA ANDINA",
       portions: null,
-      total: 468.16,
       ingredients: [
         {
           ingredient: "LECHE",
@@ -1568,7 +1550,6 @@ window.RECETARIO = {
     {
       name: "SOPA DE LENTEJAS",
       portions: null,
-      total: 251.59,
       ingredients: [
         {
           ingredient: "LENTEJAS",
@@ -1615,7 +1596,6 @@ window.RECETARIO = {
     {
       name: "SOPA DE CARAOTAS",
       portions: null,
-      total: 255.99,
       ingredients: [
         {
           ingredient: "CARAOTAS",
@@ -1662,7 +1642,6 @@ window.RECETARIO = {
     {
       name: "SOPA DE ARVEJAS",
       portions: null,
-      total: 243.67,
       ingredients: [
         {
           ingredient: "ARVEJAS",
@@ -1709,7 +1688,6 @@ window.RECETARIO = {
     {
       name: "SOPA DE TOSTONES",
       portions: null,
-      total: 319.88,
       ingredients: [
         {
           ingredient: "PLATANO VERDE",
@@ -1761,7 +1739,6 @@ window.RECETARIO = {
     {
       name: "CONSOME DE RES",
       portions: null,
-      total: 509.96,
       ingredients: [
         {
           ingredient: "ZANAHORIA",
@@ -1808,7 +1785,6 @@ window.RECETARIO = {
     {
       name: "PECHUGA CREMOSA",
       portions: null,
-      total: 454.08,
       ingredients: [
         {
           ingredient: "PECHUGA DE POLLO",
@@ -1845,7 +1821,6 @@ window.RECETARIO = {
     {
       name: "PASTA BOLOÑESA",
       portions: null,
-      total: 1471.4,
       ingredients: [
         {
           ingredient: "PASTA",
@@ -1877,7 +1852,6 @@ window.RECETARIO = {
     {
       name: "PASTA PUTANESCA",
       portions: null,
-      total: 2010.89,
       ingredients: [
         {
           ingredient: "PASTA",
@@ -1920,7 +1894,6 @@ window.RECETARIO = {
     {
       name: "PASTA AMATRICCIANA",
       portions: null,
-      total: 1848.11,
       ingredients: [
         {
           ingredient: "PASTA",
@@ -1962,7 +1935,6 @@ window.RECETARIO = {
     {
       name: "PESCA",
       portions: null,
-      total: 668.8,
       ingredients: [
         {
           ingredient: "PESCADO BLANCO",
@@ -2004,7 +1976,6 @@ window.RECETARIO = {
     {
       name: "SOLOMO BRASEADO",
       portions: null,
-      total: 707.52,
       ingredients: [
         {
           ingredient: "SOLOMO",
@@ -2046,7 +2017,6 @@ window.RECETARIO = {
     {
       name: "LOMO EN SALSA",
       portions: null,
-      total: 478.77,
       ingredients: [
         {
           ingredient: "LOMO DE CERDO",
@@ -2088,7 +2058,6 @@ window.RECETARIO = {
     {
       name: "LOMO EN SALSA DE TAMARINDO",
       portions: null,
-      total: 321.64,
       ingredients: [
         {
           ingredient: "LOMO DE CERDO ",
@@ -2135,7 +2104,6 @@ window.RECETARIO = {
     {
       name: "SOBA",
       portions: null,
-      total: 2464.0,
       ingredients: [
         {
           ingredient: "PECHUGA DE POLLO",
@@ -2202,7 +2170,6 @@ window.RECETARIO = {
     {
       name: "JUGOS",
       portions: null,
-      total: 81.84,
       ingredients: [
         {
           ingredient: "FRUTA",
@@ -2224,7 +2191,6 @@ window.RECETARIO = {
     {
       name: "POLLO AL HORNO",
       portions: null,
-      total: 1214.36,
       ingredients: [
         {
           ingredient: "PECHUGA DE POLLO",
@@ -2271,7 +2237,6 @@ window.RECETARIO = {
     {
       name: "OSOBUCO GUISADO",
       portions: null,
-      total: 586.76,
       ingredients: [
         {
           ingredient: "OSOBUCO",
@@ -2308,7 +2273,6 @@ window.RECETARIO = {
     {
       name: "PASTICHO",
       portions: null,
-      total: 1321.04,
       ingredients: [
         {
           ingredient: "CARNE MOLIDA",
@@ -2355,7 +2319,6 @@ window.RECETARIO = {
     {
       name: "BOCATA POLLO",
       portions: null,
-      total: 1522.4,
       ingredients: [
         {
           ingredient: "POLLO DESMECHADO",
@@ -2397,7 +2360,6 @@ window.RECETARIO = {
     {
       name: "BOCATA DE RES",
       portions: null,
-      total: 1329.49,
       ingredients: [
         {
           ingredient: "CARNE CURADA",
@@ -2439,7 +2401,6 @@ window.RECETARIO = {
     {
       name: "BOCATA CAPRESSA",
       portions: null,
-      total: 1587.12,
       ingredients: [
         {
           ingredient: "PESTO DE CILANTRO",
@@ -2486,7 +2447,6 @@ window.RECETARIO = {
     {
       name: "MASA DE PANQUECAS",
       portions: null,
-      total: 1457.28,
       ingredients: [
         {
           ingredient: "HARINA",
@@ -2528,7 +2488,6 @@ window.RECETARIO = {
     {
       name: "CREMOSA DE AGUACATE",
       portions: null,
-      total: 498.96,
       ingredients: [
         {
           ingredient: "AGUACATE",
@@ -2560,7 +2519,6 @@ window.RECETARIO = {
     {
       name: "COULIS DE FRUTOS ROJOS",
       portions: null,
-      total: 1399.2,
       ingredients: [
         {
           ingredient: "FRESAS",
@@ -2587,7 +2545,6 @@ window.RECETARIO = {
     {
       name: "SALSA VICKY",
       portions: null,
-      total: 4681.6,
       ingredients: [
         {
           ingredient: "HUEVOS",
@@ -2634,7 +2591,6 @@ window.RECETARIO = {
     {
       name: "MASA DE BUÑUELOS DE YUCA",
       portions: null,
-      total: 1108.8,
       ingredients: [
         {
           ingredient: "YUCA",
@@ -2661,7 +2617,6 @@ window.RECETARIO = {
     {
       name: "TIERRA DE CHICHARRONES",
       portions: null,
-      total: 660,
       ingredients: [
         {
           ingredient: "CHICHARRONES DESHIDRATADOS",
@@ -2678,7 +2633,6 @@ window.RECETARIO = {
     {
       name: "ALIOLI",
       portions: null,
-      total: 2547.6,
       ingredients: [
         {
           ingredient: "HUEVO",
@@ -2715,7 +2669,6 @@ window.RECETARIO = {
     {
       name: "TIERRA DE ACEITUNAS NEGRAS",
       portions: null,
-      total: 0,
       ingredients: [
         {
           ingredient: "ACEITUNAS NEGRAS",
@@ -2727,7 +2680,6 @@ window.RECETARIO = {
     {
       name: "SALSA SIRACHA",
       portions: null,
-      total: 3824.48,
       ingredients: [
         {
           ingredient: "AJI DULCE",
@@ -2769,7 +2721,6 @@ window.RECETARIO = {
     {
       name: "ADEREZO CESAR",
       portions: null,
-      total: 8529.4,
       ingredients: [
         {
           ingredient: "LIMON",
@@ -2821,7 +2772,6 @@ window.RECETARIO = {
     {
       name: "CHIMICHURRI",
       portions: null,
-      total: 955.68,
       ingredients: [
         {
           ingredient: "OREGANO FRESCO",
@@ -2883,11 +2833,10 @@ window.RECETARIO = {
     {
       name: "LECHE DE TIGRA",
       portions: null,
-      total: 2063.6,
       ingredients: [
         {
           ingredient: "LIMON",
-          qty: 0.10,
+          qty: 0.1,
           unit: "KG",
         },
         {
@@ -2930,7 +2879,6 @@ window.RECETARIO = {
     {
       name: "TEMPURA",
       portions: null,
-      total: 497.2,
       ingredients: [
         {
           ingredient: "HARINA",
@@ -2967,7 +2915,6 @@ window.RECETARIO = {
     {
       name: "EMPANIZADO",
       portions: null,
-      total: 323.4,
       ingredients: [
         {
           ingredient: "HARINA",
@@ -3009,7 +2956,6 @@ window.RECETARIO = {
     {
       name: "PAPAS FRITAS FRANCESAS",
       portions: null,
-      total: 0,
       ingredients: [
         {
           ingredient: "PAPAS CONGELADAS",
@@ -3021,16 +2967,15 @@ window.RECETARIO = {
     {
       name: "SALSA NAPOLE",
       portions: null,
-      total: 1092.08,
       ingredients: [
         {
           ingredient: "TOMATE",
-          qty: 0.80,
+          qty: 0.8,
           unit: "KG",
         },
         {
           ingredient: "CEBOLLA",
-          qty: 0.20,
+          qty: 0.2,
           unit: "KG",
         },
         {
@@ -3063,11 +3008,10 @@ window.RECETARIO = {
     {
       name: "MAYONESA DE ALCAPARRAS",
       portions: null,
-      total: 4435.2,
       ingredients: [
         {
           ingredient: "ALCAPARRAS",
-          qty: 0.20,
+          qty: 0.2,
           unit: "KG",
         },
         {
@@ -3077,7 +3021,7 @@ window.RECETARIO = {
         },
         {
           ingredient: "MAYONESA",
-          qty: 0.60,
+          qty: 0.6,
           unit: "KG",
         },
         {
@@ -3095,7 +3039,6 @@ window.RECETARIO = {
     {
       name: "SALSA DE CHOCOLATE",
       portions: null,
-      total: 722.04,
       ingredients: [
         {
           ingredient: "CHOCOLATE 70%",
@@ -3132,7 +3075,6 @@ window.RECETARIO = {
     {
       name: "CARNE DESMECHADA",
       portions: null,
-      total: 2974.93,
       ingredients: [
         {
           ingredient: "MUCHACHO CUADRADO",
@@ -3179,7 +3121,6 @@ window.RECETARIO = {
     {
       name: "SOFRITO VENEZOLANO",
       portions: null,
-      total: 2349.16,
       ingredients: [
         {
           ingredient: "CEBOLLA BLANCA",
@@ -3231,7 +3172,6 @@ window.RECETARIO = {
     {
       name: "POLLO DESMECHADO",
       portions: null,
-      total: 0.39,
       ingredients: [
         {
           ingredient: "PECHUGA DE POLLO",
@@ -3278,7 +3218,6 @@ window.RECETARIO = {
     {
       name: "FONDO BLANCO",
       portions: null,
-      total: 721.6,
       ingredients: [
         {
           ingredient: "HUESO DE POLLO",
@@ -3310,7 +3249,6 @@ window.RECETARIO = {
     {
       name: "FONDO OSCURO",
       portions: null,
-      total: 1513.6,
       ingredients: [
         {
           ingredient: "HUESO DE RES",
@@ -3347,7 +3285,6 @@ window.RECETARIO = {
     {
       name: "SALSA BECHAMEL",
       portions: null,
-      total: 724.24,
       ingredients: [
         {
           ingredient: "LECHE",
@@ -3389,16 +3326,15 @@ window.RECETARIO = {
     {
       name: "SALSA BBQ",
       portions: null,
-      total: 2242.24,
       ingredients: [
         {
           ingredient: "PAPELON",
-          qty: 0.50,
+          qty: 0.5,
           unit: "KG",
         },
         {
           ingredient: "SALSA KETCHUP",
-          qty: 0.40,
+          qty: 0.4,
           unit: "KG",
         },
         {
@@ -3431,7 +3367,6 @@ window.RECETARIO = {
     {
       name: "SERVICIO ALBONDIGAS",
       portions: null,
-      total: 369.6,
       ingredients: [
         {
           ingredient: "CARNE MOLIDA",
@@ -3468,7 +3403,6 @@ window.RECETARIO = {
     {
       name: "MASA DE PASTA",
       portions: null,
-      total: 370.48,
       ingredients: [
         {
           ingredient: "HARINA DE TRIGO",
@@ -3500,7 +3434,6 @@ window.RECETARIO = {
     {
       name: "CEBOLLA CARAMELIZADA",
       portions: null,
-      total: 867.24,
       ingredients: [
         {
           ingredient: "CEBOLLA BLANCA",
@@ -3509,7 +3442,7 @@ window.RECETARIO = {
         },
         {
           ingredient: "MANTEQUILLA",
-          qty: 0.10,
+          qty: 0.1,
           unit: "KG",
         },
         {
@@ -3537,7 +3470,6 @@ window.RECETARIO = {
     {
       name: "TOMATE CONFITADO",
       portions: null,
-      total: 594.88,
       ingredients: [
         {
           ingredient: "TOMATES MADUROS",
@@ -3574,11 +3506,10 @@ window.RECETARIO = {
     {
       name: "PESTO CILANTRO",
       portions: null,
-      total: 587.4,
       ingredients: [
         {
           ingredient: "ALBAHACA",
-          qty: 0.50,
+          qty: 0.5,
           unit: "KG",
         },
         {
@@ -3593,7 +3524,7 @@ window.RECETARIO = {
         },
         {
           ingredient: "CILANTRO",
-          qty: 0.10,
+          qty: 0.1,
           unit: "KG",
         },
         {
@@ -3606,7 +3537,6 @@ window.RECETARIO = {
     {
       name: "MASA EMPANADAS",
       portions: null,
-      total: 359.04,
       ingredients: [
         {
           ingredient: "ACEITE",
@@ -3628,7 +3558,6 @@ window.RECETARIO = {
     {
       name: "MASA PASTELES",
       portions: null,
-      total: 406.56,
       ingredients: [
         {
           ingredient: "HARINA DE MAIZ",
@@ -3652,14 +3581,13 @@ window.RECETARIO = {
         },
       ],
     },
-        {
+    {
       name: "MASA PASTELES",
       portions: null,
-      total: 1198.56,
       ingredients: [
         {
           ingredient: "HARINA DE TRIGO",
-          qty: 1.30,
+          qty: 1.3,
           unit: "KG",
         },
         {
@@ -3682,7 +3610,6 @@ window.RECETARIO = {
     {
       name: "MASA TEQUEÑOS",
       portions: null,
-      total: 1198.56,
       ingredients: [
         {
           ingredient: "HARINA DE TRIGO",
