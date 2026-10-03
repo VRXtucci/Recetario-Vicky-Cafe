@@ -5,33 +5,17 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Recetario | Vicky Café</title>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link
-        rel="stylesheet"
-        href="styles.css"
-    >
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -68,10 +52,7 @@
 
         <nav>
 
-            <button
-                class="nav-btn active"
-                data-view="dashboard"
-            >
+            <button class="nav-btn active" data-view="dashboard">
                 🏠
                 <span>
                     Inicio
@@ -79,10 +60,7 @@
             </button>
 
 
-            <button
-                class="nav-btn"
-                data-view="recipes"
-            >
+            <button class="nav-btn" data-view="recipes">
                 🍽️
                 <span>
                     Platos
@@ -90,10 +68,7 @@
             </button>
 
 
-            <button
-                class="nav-btn"
-                data-view="subrecipes"
-            >
+            <button class="nav-btn" data-view="subrecipes">
                 👨‍🍳
                 <span>
                     Sub recetas
@@ -101,10 +76,7 @@
             </button>
 
 
-            <button
-                class="nav-btn"
-                data-view="ingredients"
-            >
+            <button class="nav-btn" data-view="ingredients">
                 🥕
                 <span>
                     Insumos
@@ -112,10 +84,7 @@
             </button>
 
 
-            <button
-                class="nav-btn"
-                data-view="tasks"
-            >
+            <button class="nav-btn" data-view="tasks">
                 ✅
                 <span>
                     Tareas
@@ -126,11 +95,8 @@
 
 
         <div style="margin-top:15px; display:grid; gap:8px">
-            <button
-                class="secondary-btn"
-                id="export-data-btn"
-                style="width:100%; background:#1d3a2e; color:white; border-color:#2a493b"
-            >
+            <button class="secondary-btn" id="export-data-btn"
+                style="width:100%; background:#1d3a2e; color:white; border-color:#2a493b">
                 💾 Exportar data.js
             </button>
         </div>
@@ -183,11 +149,7 @@
                         🔎
                     </span>
 
-                    <input
-                        id="search"
-                        type="search"
-                        placeholder="Buscar plato, receta o insumo..."
-                    >
+                    <input id="search" type="search" placeholder="Buscar plato, receta o insumo...">
 
                 </label>
 
@@ -211,24 +173,14 @@
          MODAL
     ================================================== -->
 
-    <div
-        id="modal"
-        class="modal hidden"
-    >
+    <div id="modal" class="modal hidden">
 
-        <div
-            class="modal-backdrop"
-            data-close
-        ></div>
+        <div class="modal-backdrop" data-close></div>
 
 
         <article class="modal-card">
 
-            <button
-                class="close"
-                data-close
-                aria-label="Cerrar"
-            >
+            <button class="close" data-close aria-label="Cerrar">
                 ×
             </button>
 
