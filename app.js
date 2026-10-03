@@ -37,6 +37,85 @@ window.RECETARIO_ORIGINAL =
 
 
 /* =====================================================
+   SUPABASE - SINCRONIZACIÓN
+===================================================== */
+
+let supabaseReady = false;
+
+// Botón exportar data.js
+document.addEventListener('DOMContentLoaded', () => {
+    const exportBtn = document.getElementById('export-data-btn');
+    if (exportBtn) {
+        exportBtn.onclick = exportDataJS;
+    }
+});
+
+function exportDataJS() {
+    const data = {
+        restaurant: D.restaurant,
+        currency: D.currency,
+        ingredients: D.ingredients,
+        recipes: D.recipes.map(cleanItem),
+        subrecipes: D.subrecipes.map(cleanItem)
+    };
+
+    const content = 'window.RECETARIO = ' + JSON.stringify(data, null, 2) + ';';
+    const blob = new Blob([content], { type: 'application/javascript' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'data.js';
+    a.click();
+    URL.revokeObjectURL(url);
+    showNotification('Archivo exportado', 'data.js descargado correctamente');
+}
+
+async function initSupabase() {
+    try {
+        // Verificar conexión
+        const { data, error } = await supabaseClient.from('recipes').select('id').limit(1);
+        if (error) throw error;
+        supabaseReady = true;
+        console.log('Supabase conectado');
+    } catch (e) {
+        console.warn('Supabase no disponible, usando localStorage:', e.message);
+        supabaseReady = false;
+    }
+}
+
+async function syncToSupabase(table, data) {
+    if (!supabaseReady) return;
+    try {
+        const { error } = await supabaseClient.from(table).upsert(data);
+        if (error) console.error(`Error sincronizando ${table}:`, error);
+    } catch (e) {
+        console.error(`Error sincronizando ${table}:`, e);
+    }
+}
+
+async function deleteFromSupabase(table, id) {
+    if (!supabaseReady) return;
+    try {
+        const { error } = await supabaseClient.from(table).delete().eq('id', id);
+        if (error) console.error(`Error eliminando de ${table}:`, error);
+    } catch (e) {
+        console.error(`Error eliminando de ${table}:`, e);
+    }
+}
+
+async function loadFromSupabase(table) {
+    if (!supabaseReady) return null;
+    try {
+        const { data, error } = await supabaseClient.from(table).select('*');
+        if (error) throw error;
+        return data;
+    } catch (e) {
+        console.error(`Error cargando ${table}:`, e);
+        return null;
+    }
+}
+
+/* =====================================================
    CARGAR INSUMOS PERSONALIZADOS
 ===================================================== */
 
@@ -526,6 +605,21 @@ function persist() {
         STORAGE_KEY,
         JSON.stringify(payload)
     );
+
+    // Sincronizar con Supabase
+    if (supabaseReady) {
+        const allRecipes = D.recipes.map(cleanItem).map(r => ({
+            ...r,
+            ingredients: JSON.stringify(r.ingredients)
+        }));
+        const allSubrecipes = D.subrecipes.map(cleanItem).map(s => ({
+            ...s,
+            ingredients: JSON.stringify(s.ingredients)
+        }));
+
+        allRecipes.forEach(r => syncToSupabase('recipes', r));
+        allSubrecipes.forEach(s => syncToSupabase('subrecipes', s));
+    }
 
 }
 
@@ -3218,6 +3312,18 @@ function loadTasks() {
 
 function saveTasks(tasks) {
     localStorage.setItem(TASKS_STORAGE_KEY, JSON.stringify(tasks));
+
+    // Sincronizar con Supabase
+    if (supabaseReady) {
+        tasks.forEach(task => {
+            const { id, ...rest } = task;
+            syncToSupabase('tasks', {
+                ...rest,
+                reminder: task.reminder || null,
+                reminder_sent: task.reminderSent || false
+            });
+        });
+    }
 }
 
 function generateId() {
@@ -3429,6 +3535,23 @@ function renderTasks() {
 /* =====================================================
    INICIAR
 ===================================================== */
+
+// Inicializar Supabase
+initSupabase().then(() => {
+    // Cargar datos de Supabase después de conectar
+    if (supabaseReady) {
+        Promise.all([
+            loadFromSupabase('recipes'),
+            loadFromSupabase('subrecipes'),
+            loadFromSupabase('ingredients'),
+            loadFromSupabase('tasks')
+        ]).then(([recipes, subrecipes, ingredients, tasks]) => {
+            // Los datos de Supabase se sincronizan automáticamente
+            // cuando se guardan cambios en la app
+            console.log('Datos cargados desde Supabase');
+        });
+    }
+});
 
 render();
 
