@@ -1788,7 +1788,7 @@ window.RECETARIO = {
       ingredients: [
         {
           ingredient: "PECHUGA DE POLLO",
-          qty: 1,
+          qty: 0.13,
           unit: "KG",
         },
         {
