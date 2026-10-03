@@ -71,19 +71,493 @@ function exportDataJS() {
 }
 
 async function initSupabase() {
-    try {
-        // Verificar conexión
-        const { data, error } = await supabaseClient.from('recipes').select('id').limit(1);
-        if (error) throw error;
-        supabaseReady = true;
-        console.log('Supabase conectado');
 
-        // Migrar datos iniciales del data.js a Supabase
-        await migrateDataToSupabase();
-    } catch (e) {
-        console.warn('Supabase no disponible, usando localStorage:', e.message);
-        supabaseReady = false;
+    try {
+
+        console.log("Conectando con Supabase...");
+
+        if (
+            typeof supabaseClient === "undefined" ||
+            !supabaseClient
+        ) {
+
+            throw new Error(
+                "supabaseClient no está disponible"
+            );
+
+        }
+
+
+        /*
+        =====================================================
+        VERIFICAR CONEXIÓN
+        =====================================================
+        */
+
+        const {
+            error
+        } =
+            await supabaseClient
+                .from("recipes")
+                .select("id")
+                .limit(1);
+
+
+        if (error) {
+
+            throw error;
+
+        }
+
+
+        supabaseReady = true;
+
+        console.log(
+            "✅ Supabase conectado correctamente"
+        );
+
+
+        /*
+        =====================================================
+        CARGAR DATOS DESDE SUPABASE
+        =====================================================
+        */
+
+        const loaded =
+            await loadRecetarioFromSupabase();
+
+
+        /*
+        =====================================================
+        SI SUPABASE ESTÁ VACÍO
+        =====================================================
+
+        Esto solamente sirve para la primera carga.
+
+        Si las tres tablas están vacías,
+        migramos una sola vez el data.js.
+
+        IMPORTANTE:
+        No se ejecuta si ya existen datos.
+        =====================================================
+        */
+
+        if (
+            loaded &&
+            loaded.isEmpty
+        ) {
+
+            console.log(
+                "Supabase está vacío."
+            );
+
+            console.log(
+                "Migrando datos iniciales desde data.js..."
+            );
+
+
+            await migrateDataToSupabase();
+
+
+            /*
+            Volvemos a cargar los datos,
+            pero ahora desde Supabase.
+            */
+
+            await loadRecetarioFromSupabase();
+
+        }
+
+
+        console.log(
+            "✅ Recetario cargado desde Supabase"
+        );
+
+
+        return true;
+
+
+    } catch (error) {
+
+        console.warn(
+            "⚠️ Supabase no disponible."
+        );
+
+        console.warn(
+            "Se utilizará data.js como respaldo."
+        );
+
+        console.error(
+            error
+        );
+
+
+        supabaseReady =
+            false;
+
+
+        return false;
+
     }
+
+}
+
+async function loadRecetarioFromSupabase() {
+
+    if (
+        !supabaseReady
+    ) {
+
+        return null;
+
+    }
+
+
+    console.log(
+        "📥 Cargando recetario desde Supabase..."
+    );
+
+
+    try {
+
+
+        /*
+        =====================================================
+        CARGAR INSUMOS
+        =====================================================
+        */
+
+        const ingredients =
+            await loadFromSupabase(
+                "ingredients"
+            );
+
+
+        /*
+        =====================================================
+        CARGAR PLATOS
+        =====================================================
+        */
+
+        const recipes =
+            await loadFromSupabase(
+                "recipes"
+            );
+
+
+        /*
+        =====================================================
+        CARGAR SUB-RECETAS
+        =====================================================
+        */
+
+        const subrecipes =
+            await loadFromSupabase(
+                "subrecipes"
+            );
+
+
+        /*
+        =====================================================
+        COMPROBAR RESULTADOS
+        =====================================================
+        */
+
+        if (
+            ingredients === null ||
+            recipes === null ||
+            subrecipes === null
+        ) {
+
+            throw new Error(
+                "No se pudieron cargar todas las tablas de Supabase."
+            );
+
+        }
+
+
+        console.log(
+            "Ingredientes desde Supabase:",
+            ingredients.length
+        );
+
+
+        console.log(
+            "Platos desde Supabase:",
+            recipes.length
+        );
+
+
+        console.log(
+            "Sub-recetas desde Supabase:",
+            subrecipes.length
+        );
+
+
+        /*
+        =====================================================
+        SI LAS TRES TABLAS ESTÁN VACÍAS
+        =====================================================
+        */
+
+        const isEmpty =
+            ingredients.length === 0 &&
+            recipes.length === 0 &&
+            subrecipes.length === 0;
+
+
+        if (
+            isEmpty
+        ) {
+
+            return {
+                isEmpty: true
+            };
+
+        }
+
+
+        /*
+        =====================================================
+        CONVERTIR INGREDIENTES
+        =====================================================
+        */
+
+        D.ingredients =
+            ingredients.map(
+                ingredient => ({
+
+                    id:
+                        ingredient.id,
+
+                    name:
+                        ingredient.name,
+
+                    unit:
+                        ingredient.unit
+
+                })
+            );
+
+
+        /*
+        =====================================================
+        CONVERTIR RECETAS
+        =====================================================
+        */
+
+        D.recipes =
+            recipes.map(
+                recipe => {
+
+                    let parsedIngredients =
+                        [];
+
+
+                    try {
+
+                        if (
+                            Array.isArray(
+                                recipe.ingredients
+                            )
+                        ) {
+
+                            parsedIngredients =
+                                recipe.ingredients;
+
+                        }
+                        else if (
+                            typeof recipe.ingredients ===
+                            "string"
+                        ) {
+
+                            parsedIngredients =
+                                JSON.parse(
+                                    recipe.ingredients
+                                );
+
+                        }
+
+                    } catch (error) {
+
+                        console.error(
+                            "Error leyendo ingredientes de receta:",
+                            recipe.name,
+                            error
+                        );
+
+                        parsedIngredients =
+                            [];
+
+                    }
+
+
+                    return normalizeRecipe({
+
+                        id:
+                            recipe.id,
+
+                        name:
+                            recipe.name,
+
+                        portions:
+                            recipe.portions,
+
+                        ingredients:
+                            parsedIngredients
+
+                    });
+
+                }
+            );
+
+
+        /*
+        =====================================================
+        CONVERTIR SUB-RECETAS
+        =====================================================
+        */
+
+        D.subrecipes =
+            subrecipes.map(
+                subrecipe => {
+
+                    let parsedIngredients =
+                        [];
+
+
+                    try {
+
+                        if (
+                            Array.isArray(
+                                subrecipe.ingredients
+                            )
+                        ) {
+
+                            parsedIngredients =
+                                subrecipe.ingredients;
+
+                        }
+                        else if (
+                            typeof subrecipe.ingredients ===
+                            "string"
+                        ) {
+
+                            parsedIngredients =
+                                JSON.parse(
+                                    subrecipe.ingredients
+                                );
+
+                        }
+
+                    } catch (error) {
+
+                        console.error(
+                            "Error leyendo ingredientes de sub-receta:",
+                            subrecipe.name,
+                            error
+                        );
+
+                        parsedIngredients =
+                            [];
+
+                    }
+
+
+                    return normalizeRecipe({
+
+                        id:
+                            subrecipe.id,
+
+                        name:
+                            subrecipe.name,
+
+                        portions:
+                            subrecipe.portions,
+
+                        ingredients:
+                            parsedIngredients
+
+                    });
+
+                }
+            );
+
+
+        /*
+        =====================================================
+        INSUMOS PERSONALIZADOS
+        =====================================================
+        */
+
+        const customIngredients =
+            loadCustomIngredients();
+
+
+        D.ingredients = [
+
+            ...D.ingredients,
+
+            ...customIngredients
+
+        ];
+
+
+        /*
+        =====================================================
+        MOSTRAR EN CONSOLA
+        =====================================================
+        */
+
+        console.log(
+            "📦 Recetario cargado:"
+        );
+
+        console.log(
+            "Ingredientes:",
+            D.ingredients.length
+        );
+
+        console.log(
+            "Platos:",
+            D.recipes.length
+        );
+
+        console.log(
+            "Sub-recetas:",
+            D.subrecipes.length
+        );
+
+
+        return {
+
+            isEmpty:
+                false,
+
+            ingredients:
+                D.ingredients,
+
+            recipes:
+                D.recipes,
+
+            subrecipes:
+                D.subrecipes
+
+        };
+
+
+    } catch (error) {
+
+        console.error(
+            "❌ Error cargando recetario desde Supabase:",
+            error
+        );
+
+
+        return null;
+
+    }
+
 }
 
 async function migrateDataToSupabase() {
@@ -137,14 +611,67 @@ async function migrateDataToSupabase() {
     }
 }
 
-async function syncToSupabase(table, data) {
-    if (!supabaseReady) return;
-    try {
-        const { error } = await supabaseClient.from(table).upsert(data);
-        if (error) console.error(`Error sincronizando ${table}:`, error);
-    } catch (e) {
-        console.error(`Error sincronizando ${table}:`, e);
+async function syncToSupabase(
+    table,
+    data
+) {
+
+    if (
+        !supabaseReady
+    ) {
+
+        return;
+
     }
+
+
+    try {
+
+        const {
+            error
+        } =
+            await supabaseClient
+                .from(table)
+                .upsert(
+                    data,
+                    {
+                        onConflict:
+                            "name"
+                    }
+                );
+
+
+        if (
+            error
+        ) {
+
+            console.error(
+                `Error sincronizando ${table}:`,
+                error
+            );
+
+            return;
+
+        }
+
+
+        console.log(
+            `✅ ${table} sincronizado:`,
+            data.name
+        );
+
+
+    } catch (
+        error
+    ) {
+
+        console.error(
+            `Error sincronizando ${table}:`,
+            error
+        );
+
+    }
+
 }
 
 async function deleteFromSupabase(table, id) {
@@ -3587,27 +4114,76 @@ function renderTasks() {
 }
 
 /* =====================================================
-   INICIAR
+   INICIAR APLICACIÓN
 ===================================================== */
 
-// Inicializar Supabase
-initSupabase().then(() => {
-    // Cargar datos de Supabase después de conectar
-    if (supabaseReady) {
-        Promise.all([
-            loadFromSupabase('recipes'),
-            loadFromSupabase('subrecipes'),
-            loadFromSupabase('ingredients'),
-            loadFromSupabase('tasks')
-        ]).then(([recipes, subrecipes, ingredients, tasks]) => {
-            // Los datos de Supabase se sincronizan automáticamente
-            // cuando se guardan cambios en la app
-            console.log('Datos cargados desde Supabase');
-        });
-    }
-});
+async function startApplication() {
 
-render();
+    console.log(
+        "🚀 Iniciando Recetario Vicky Café..."
+    );
 
-setInterval(checkReminders, 30000);
-checkReminders();
+
+    /*
+    Primero intentamos conectar
+    y cargar Supabase.
+    */
+
+    await initSupabase();
+
+
+    /*
+    Si Supabase funcionó,
+    D ya contiene los datos de la base.
+    */
+
+
+    /*
+    Volver a normalizar todo.
+    */
+
+    D.ingredients =
+        (
+            D.ingredients || []
+        );
+
+
+    D.recipes =
+        (
+            D.recipes || []
+        )
+        .map(
+            normalizeRecipe
+        );
+
+
+    D.subrecipes =
+        (
+            D.subrecipes || []
+        )
+        .map(
+            normalizeRecipe
+        );
+
+
+    /*
+    Finalmente renderizamos.
+    */
+
+    render();
+
+
+    console.log(
+        "✅ Aplicación iniciada correctamente."
+    );
+
+}
+
+
+/*
+=====================================================
+ARRANCAR
+=====================================================
+*/
+
+startApplication();
