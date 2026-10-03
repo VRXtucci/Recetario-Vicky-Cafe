@@ -77,9 +77,63 @@ async function initSupabase() {
         if (error) throw error;
         supabaseReady = true;
         console.log('Supabase conectado');
+
+        // Migrar datos iniciales del data.js a Supabase
+        await migrateDataToSupabase();
     } catch (e) {
         console.warn('Supabase no disponible, usando localStorage:', e.message);
         supabaseReady = false;
+    }
+}
+
+async function migrateDataToSupabase() {
+    if (!supabaseReady) return;
+
+    console.log('Migrando datos a Supabase...');
+
+    try {
+        // Migrar ingredientes
+        const ingredients = D.ingredients.map(ing => ({
+            name: ing.name,
+            unit: ing.unit
+        }));
+
+        for (const ing of ingredients) {
+            const { error } = await supabaseClient.from('ingredients').upsert(ing, { onConflict: 'name' });
+            if (error) console.error('Error migrando ingrediente:', ing.name, error);
+        }
+        console.log(`Ingredientes migrados: ${ingredients.length}`);
+
+        // Migrar recetas
+        const recipes = D.recipes.map(r => ({
+            name: r.name,
+            portions: r.portions,
+            ingredients: JSON.stringify(r.ingredients)
+        }));
+
+        for (const rec of recipes) {
+            const { error } = await supabaseClient.from('recipes').upsert(rec, { onConflict: 'name' });
+            if (error) console.error('Error migrando receta:', rec.name, error);
+        }
+        console.log(`Recetas migradas: ${recipes.length}`);
+
+        // Migrar subrecetas
+        const subrecipes = D.subrecipes.map(s => ({
+            name: s.name,
+            portions: s.portions,
+            ingredients: JSON.stringify(s.ingredients)
+        }));
+
+        for (const sub of subrecipes) {
+            const { error } = await supabaseClient.from('subrecipes').upsert(sub, { onConflict: 'name' });
+            if (error) console.error('Error migrando subreceta:', sub.name, error);
+        }
+        console.log(`Subrecetas migradas: ${subrecipes.length}`);
+
+        console.log('Migración completada');
+        showNotification('Sincronización completada', 'Todos los datos fueron enviados a Supabase');
+    } catch (e) {
+        console.error('Error en migración:', e);
     }
 }
 
