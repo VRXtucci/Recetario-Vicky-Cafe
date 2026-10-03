@@ -1207,6 +1207,272 @@ select {
 }
 
 
+
+/* =====================================================
+    TASKS
+===================================================== */
+
+.task-form {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+}
+
+.task-form-row {
+    display: grid;
+    grid-template-columns: 1fr 140px 120px auto;
+    gap: 10px;
+    align-items: end;
+}
+
+.task-form label {
+    display: grid;
+    gap: 5px;
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.task-form input,
+.task-form select {
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    padding: 10px 11px;
+    outline: none;
+    background: white;
+    color: var(--ink);
+    font: inherit;
+}
+
+.task-form input:focus,
+.task-form select:focus {
+    border-color: #9bc3ae;
+    box-shadow: 0 0 0 3px #edf6f1;
+}
+
+.task-list {
+    display: grid;
+    gap: 10px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 16px;
+    box-shadow: var(--shadow);
+    transition: .18s;
+}
+
+.task-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 35px rgba(24, 33, 29, .10);
+}
+
+.task-item.completed {
+    opacity: .55;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: var(--muted);
+}
+
+.task-checkbox {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    background: transparent;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    transition: .2s;
+    color: transparent;
+    font-size: 13px;
+}
+
+.task-checkbox:hover {
+    background: var(--accent2);
+}
+
+.task-checkbox.checked {
+    background: var(--accent);
+    color: white;
+}
+
+.task-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 3px;
+}
+
+.task-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.task-meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.task-priority {
+    padding: 4px 10px;
+    border-radius: 99px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    flex-shrink: 0;
+}
+
+.task-priority.high {
+    background: #fde8e8;
+    color: #b94a48;
+}
+
+.task-priority.medium {
+    background: #fff8e6;
+    color: #705c27;
+}
+
+.task-priority.low {
+    background: #e9f4ee;
+    color: #2d7659;
+}
+
+.task-delete {
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 8px;
+    transition: .2s;
+    flex-shrink: 0;
+}
+
+.task-delete:hover {
+    background: var(--danger-bg);
+    color: var(--danger);
+}
+
+.task-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--muted);
+    background: var(--card);
+    border: 1px dashed #ccd6d0;
+    border-radius: 14px;
+}
+
+.task-badge {
+    background: var(--accent);
+    color: white;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 99px;
+    margin-left: 8px;
+}
+
+/* =====================================================
+    NOTIFICATIONS
+===================================================== */
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: white;
+    border-radius: 14px;
+    padding: 16px 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .20);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 380px;
+    animation: slideIn .3s ease;
+    border-left: 4px solid var(--accent);
+}
+
+.notification.reminder {
+    border-left-color: #e8a838;
+}
+
+.notification-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-title {
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0 0 2px;
+}
+
+.notification-message {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 0;
+}
+
+.notification-close {
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.notification-close:hover {
+    background: #f0f3f1;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(120%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.notification.hiding {
+    animation: fadeOut .3s ease forwards;
+}
+
 /* =====================================================
    RESPONSIVE
 ===================================================== */

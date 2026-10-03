@@ -3084,6 +3084,14 @@ function render() {
         dashboard();
 
     }
+    else if (
+        view ===
+        "tasks"
+    ) {
+
+        renderTasks();
+
+    }
     else {
 
         listing(
@@ -3096,7 +3104,225 @@ function render() {
 
 
 /* =====================================================
+   TASKS
+===================================================== */
+
+const TASKS_STORAGE_KEY = "vickyCafeTasksV1";
+
+function loadTasks() {
+    try {
+        return JSON.parse(localStorage.getItem(TASKS_STORAGE_KEY)) || [];
+    } catch {
+        return [];
+    }
+}
+
+function saveTasks(tasks) {
+    localStorage.setItem(TASKS_STORAGE_KEY, JSON.stringify(tasks));
+}
+
+function generateId() {
+    return Date.now().toString(36) + Math.random().toString(36).slice(2);
+}
+
+function showNotification(title, message, isReminder = false) {
+    const existing = document.querySelectorAll('.notification');
+    if (existing.length >= 3) {
+        existing[0].remove();
+    }
+
+    const el = document.createElement('div');
+    el.className = 'notification' + (isReminder ? ' reminder' : '');
+    el.innerHTML = `
+        <span class="notification-icon">${isReminder ? '⏰' : '🔔'}</span>
+        <div class="notification-content">
+            <p class="notification-title">${esc(title)}</p>
+            <p class="notification-message">${esc(message)}</p>
+        </div>
+        <button class="notification-close" onclick="this.parentElement.remove()">×</button>
+    `;
+    document.body.appendChild(el);
+
+    setTimeout(() => {
+        el.classList.add('hiding');
+        setTimeout(() => el.remove(), 300);
+    }, 5000);
+}
+
+function checkReminders() {
+    const tasks = loadTasks();
+    const now = new Date();
+
+    tasks.forEach(task => {
+        if (task.reminder && !task.reminderSent) {
+            const reminderTime = new Date(task.reminder);
+            if (reminderTime <= now) {
+                showNotification(
+                    'Recordatorio: ' + task.title,
+                    task.description || 'Es hora de realizar esta tarea',
+                    true
+                );
+                task.reminderSent = true;
+                saveTasks(tasks);
+
+                if ('Notification' in window && Notification.permission === 'granted') {
+                    new Notification('Vicky Café - Recordatorio', {
+                        body: task.title,
+                        icon: '🍽️'
+                    });
+                }
+            }
+        }
+    });
+}
+
+function renderTasks() {
+    title.textContent = 'Tareas del día';
+
+    const tasks = loadTasks();
+    const pendingCount = tasks.filter(t => !t.completed).length;
+
+    app.innerHTML = `
+        <div class="section-head">
+            <div>
+                <h2>
+                    Lista de tareas
+                    ${pendingCount > 0 ? `<span class="task-badge">${pendingCount} pendientes</span>` : ''}
+                </h2>
+                <p>Organiza tu día y recibe recordatorios</p>
+            </div>
+        </div>
+
+        <form class="task-form" id="task-form">
+            <div class="task-form-row">
+                <label>
+                    Tarea
+                    <input type="text" id="task-title" placeholder="Ej. Preparar salsa napolitana" required>
+                </label>
+                <label>
+                    Hora
+                    <input type="time" id="task-time">
+                </label>
+                <label>
+                    Prioridad
+                    <select id="task-priority">
+                        <option value="low">Baja</option>
+                        <option value="medium" selected>Media</option>
+                        <option value="high">Alta</option>
+                    </select>
+                </label>
+                <button type="submit" class="primary-btn">＋ Agregar</button>
+            </div>
+            <div style="margin-top:10px">
+                <label>
+                    Descripción (opcional)
+                    <input type="text" id="task-desc" placeholder="Detalles adicionales...">
+                </label>
+            </div>
+        </form>
+
+        <div class="task-list" id="task-list"></div>
+    `;
+
+    const list = document.getElementById('task-list');
+
+    if (tasks.length === 0) {
+        list.innerHTML = `
+            <div class="task-empty">
+                No hay tareas registradas.<br>
+                Agrega tu primera tarea para organizar el día.
+            </div>
+        `;
+    } else {
+        const sorted = [...tasks].sort((a, b) => {
+            if (a.completed !== b.completed) return a.completed ? 1 : -1;
+            const pa = { high: 0, medium: 1, low: 2 };
+            return pa[a.priority] - pa[b.priority];
+        });
+
+        list.innerHTML = sorted.map(task => `
+            <div class="task-item ${task.completed ? 'completed' : ''}" data-id="${task.id}">
+                <button class="task-checkbox ${task.completed ? 'checked' : ''}" data-action="toggle">
+                    ${task.completed ? '✓' : ''}
+                </button>
+                <div class="task-info">
+                    <p class="task-title">${esc(task.title)}</p>
+                    <div class="task-meta">
+                        ${task.time ? `<span>🕐 ${esc(task.time)}</span>` : ''}
+                        ${task.description ? `<span>📝 ${esc(task.description)}</span>` : ''}
+                        ${task.reminder ? `<span>⏰ Recordatorio</span>` : ''}
+                    </div>
+                </div>
+                <span class="task-priority ${task.priority}">
+                    ${task.priority === 'high' ? 'Alta' : task.priority === 'medium' ? 'Media' : 'Baja'}
+                </span>
+                <button class="task-delete" data-action="delete" title="Eliminar">×</button>
+            </div>
+        `).join('');
+    }
+
+    document.getElementById('task-form').onsubmit = (e) => {
+        e.preventDefault();
+        const title = document.getElementById('task-title').value.trim();
+        const time = document.getElementById('task-time').value;
+        const priority = document.getElementById('task-priority').value;
+        const description = document.getElementById('task-desc').value.trim();
+
+        if (!title) return;
+
+        const tasks = loadTasks();
+        const newTask = {
+            id: generateId(),
+            title,
+            time,
+            priority,
+            description,
+            completed: false,
+            reminder: time ? new Date().toDateString() + ' ' + time : null,
+            reminderSent: false,
+            createdAt: new Date().toISOString()
+        };
+
+        tasks.push(newTask);
+        saveTasks(tasks);
+        renderTasks();
+
+        showNotification('Tarea agregada', title);
+
+        if ('Notification' in window && Notification.permission === 'default') {
+            Notification.requestPermission();
+        }
+    };
+
+    list.querySelectorAll('.task-item').forEach(item => {
+        const id = item.dataset.id;
+        const tasks = loadTasks();
+
+        item.querySelector('[data-action="toggle"]').onclick = () => {
+            const task = tasks.find(t => t.id === id);
+            if (task) {
+                task.completed = !task.completed;
+                saveTasks(tasks);
+                renderTasks();
+                if (task.completed) {
+                    showNotification('Tarea completada', task.title);
+                }
+            }
+        };
+
+        item.querySelector('[data-action="delete"]').onclick = () => {
+            const filtered = tasks.filter(t => t.id !== id);
+            saveTasks(filtered);
+            renderTasks();
+        };
+    });
+}
+
+/* =====================================================
    INICIAR
 ===================================================== */
 
 render();
+
+setInterval(checkReminders, 30000);
+checkReminders();
