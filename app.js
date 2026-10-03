@@ -37,6 +37,30 @@ window.RECETARIO_ORIGINAL =
 
 
 /* =====================================================
+   CARGAR INSUMOS PERSONALIZADOS
+===================================================== */
+
+const INGREDIENTS_STORAGE_KEY = "vickyCafeCustomIngredientsV1";
+
+function loadCustomIngredients() {
+    try {
+        return JSON.parse(localStorage.getItem(INGREDIENTS_STORAGE_KEY)) || [];
+    } catch {
+        return [];
+    }
+}
+
+function saveCustomIngredients(ingredients) {
+    localStorage.setItem(INGREDIENTS_STORAGE_KEY, JSON.stringify(ingredients));
+}
+
+D.ingredients = [
+    ...(D.ingredients || []),
+    ...loadCustomIngredients()
+];
+
+
+/* =====================================================
    UTILIDADES
 ===================================================== */
 
@@ -901,6 +925,13 @@ function listing(type) {
 
                 </div>
 
+                <button
+                    class="primary-btn"
+                    id="new-ingredient"
+                >
+                    ＋ Agregar insumo
+                </button>
+
             </div>
 
 
@@ -994,6 +1025,10 @@ function listing(type) {
 
         `;
 
+
+        document
+            .getElementById("new-ingredient")
+            .onclick = openIngredientModal;
 
         return;
 
@@ -3104,6 +3139,70 @@ function render() {
 
 
 /* =====================================================
+   NUEVO INSUMO
+===================================================== */
+
+function openIngredientModal() {
+    modalContent.innerHTML = `
+        <span class="tag">Nuevo insumo</span>
+        <h2>Agregar insumo</h2>
+        <form id="ingredient-form" class="recipe-form">
+            <label>
+                Nombre del insumo
+                <input
+                    id="f-ing-name"
+                    required
+                    placeholder="Ej. CREMA DE LECHE"
+                >
+            </label>
+            <label>
+                Unidad
+                <select id="f-ing-unit">
+                    <option value="KG">Kilogramo (KG)</option>
+                    <option value="L">Litro (L)</option>
+                    <option value="UNIDAD">Unidad</option>
+                    <option value="PAQUETE">Paquete</option>
+                    <option value="FRASCO">Frasco</option>
+                    <option value="METRO">Metro</option>
+                </select>
+            </label>
+            <div class="form-actions">
+                <button type="button" class="secondary-btn" data-close>Cancelar</button>
+                <button type="submit" class="primary-btn">Guardar insumo</button>
+            </div>
+        </form>
+    `;
+
+    modal.classList.remove("hidden");
+
+    document.getElementById("ingredient-form").onsubmit = (e) => {
+        e.preventDefault();
+        const name = document.getElementById("f-ing-name").value.trim().toUpperCase();
+        const unit = document.getElementById("f-ing-unit").value;
+
+        if (!name) return;
+
+        const customIngredients = loadCustomIngredients();
+        const exists = D.ingredients.some(i => norm(i.name) === norm(name)) ||
+                       customIngredients.some(i => norm(i.name) === norm(name));
+
+        if (exists) {
+            alert("Este insumo ya existe en el catálogo.");
+            return;
+        }
+
+        customIngredients.push({ name, unit });
+        saveCustomIngredients(customIngredients);
+
+        D.ingredients.push({ name, unit });
+
+        closeModal();
+        render();
+        showNotification("Insumo agregado", name);
+    };
+}
+
+/* =====================================================
    TASKS
 ===================================================== */
 
@@ -3215,6 +3314,12 @@ function renderTasks() {
             </div>
             <div style="margin-top:10px">
                 <label>
+                    Insumo (opcional)
+                    <input type="text" id="task-ingredient" placeholder="Ej. CREMA DE LECHE, TOMATE, etc.">
+                </label>
+            </div>
+            <div style="margin-top:10px">
+                <label>
                     Descripción (opcional)
                     <input type="text" id="task-desc" placeholder="Detalles adicionales...">
                 </label>
@@ -3248,6 +3353,7 @@ function renderTasks() {
                 <div class="task-info">
                     <p class="task-title">${esc(task.title)}</p>
                     <div class="task-meta">
+                        ${task.ingredient ? `<span>🥕 ${esc(task.ingredient)}</span>` : ''}
                         ${task.time ? `<span>🕐 ${esc(task.time)}</span>` : ''}
                         ${task.description ? `<span>📝 ${esc(task.description)}</span>` : ''}
                         ${task.reminder ? `<span>⏰ Recordatorio</span>` : ''}
@@ -3267,6 +3373,7 @@ function renderTasks() {
         const time = document.getElementById('task-time').value;
         const priority = document.getElementById('task-priority').value;
         const description = document.getElementById('task-desc').value.trim();
+        const ingredient = document.getElementById('task-ingredient').value.trim();
 
         if (!title) return;
 
@@ -3277,6 +3384,7 @@ function renderTasks() {
             time,
             priority,
             description,
+            ingredient,
             completed: false,
             reminder: time ? new Date().toDateString() + ' ' + time : null,
             reminderSent: false,
